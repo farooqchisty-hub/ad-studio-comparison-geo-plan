@@ -1,0 +1,1331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Ad Studio comparison and GEO plan</title>
+<meta name="description" content="Research report: competitor comparison pages, GEO/AEO and content strategy for Ad Studio by Brevo (ads.brevo.com). Snapshot 6 Nov 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbf8;
+  --surface: #ffffff;
+  --text: #1c1f1d;
+  --muted: #5b625e;
+  --border: #e3e5df;
+  --accent: #0a7a52;
+  --accent-soft: #e6f3ec;
+  --table-stripe: #f5f6f2;
+  --code-bg: #f1f2ed;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111413;
+    --surface: #181c1a;
+    --text: #e7ebe8;
+    --muted: #a1aaa5;
+    --border: #2a302d;
+    --accent: #4cc493;
+    --accent-soft: #16291f;
+    --table-stripe: #1d2220;
+    --code-bg: #1f2422;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+header.hero {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.hero-inner { max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px; }
+.eyebrow {
+  font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 14px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
+  font-size: clamp(30px, 4.4vw, 48px); line-height: 1.12; margin: 0 0 18px; max-width: 900px;
+}
+.meta { display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--muted); font-size: 14px; }
+.meta span::before { content: "· "; color: var(--border); }
+.meta span:first-child::before { content: ""; }
+.layout {
+  max-width: 1240px; margin: 0 auto; padding: 32px 24px 80px;
+  display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 56px;
+}
+nav.toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; font-size: 13.5px; }
+nav.toc h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-list li { margin: 0; }
+.toc-list a { display: block; padding: 5px 10px; border-left: 2px solid var(--border); color: var(--muted); text-decoration: none; line-height: 1.4; }
+.toc-list a:hover { color: var(--text); border-left-color: var(--muted); }
+.toc-list a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 500; }
+.toc-h2 > a { color: var(--text); font-weight: 500; margin-top: 6px; }
+.toc-h3 > a { padding-left: 22px; font-size: 13px; }
+details.toc-mobile { display: none; }
+main { min-width: 0; max-width: 860px; }
+main h2 {
+  font-family: "Source Serif 4", Georgia, serif; font-size: 28px; line-height: 1.25;
+  margin: 64px 0 16px; padding-top: 24px; border-top: 1px solid var(--border);
+}
+main h3 { font-size: 19px; line-height: 1.35; margin: 40px 0 12px; font-weight: 600; }
+main p { margin: 0 0 18px; }
+p.lede {
+  font-size: 17px; background: var(--accent-soft); border-left: 3px solid var(--accent);
+  padding: 22px 26px; border-radius: 0 10px 10px 0; margin-bottom: 8px;
+}
+strong { font-weight: 600; }
+.table-wrap {
+  overflow-x: auto; margin: 24px 0 28px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface);
+}
+table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.5; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); background: var(--table-stripe); }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) td { background: var(--table-stripe); }
+td:first-child { font-weight: 500; min-width: 140px; }
+code { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code-bg); padding: 2px 5px; border-radius: 4px; }
+pre { background: var(--code-bg); padding: 18px 20px; border-radius: 10px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: none; padding: 0; font-size: 13px; }
+footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 13.5px; }
+.footer-inner { max-width: 1240px; margin: 0 auto; padding: 28px 24px 48px; }
+.back-top { position: fixed; right: 20px; bottom: 20px; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 999px; padding: 8px 14px; font-size: 13px; text-decoration: none; opacity: 0; pointer-events: none; transition: opacity .2s; }
+.back-top.show { opacity: 1; pointer-events: auto; }
+@media (max-width: 1080px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 20px; }
+  nav.toc { display: none; }
+  details.toc-mobile { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; font-size: 14px; }
+  details.toc-mobile summary { cursor: pointer; font-weight: 600; }
+  details.toc-mobile .toc-list { margin-top: 10px; }
+}
+@media (max-width: 600px) {
+  body { font-size: 15.5px; }
+  .hero-inner { padding: 36px 16px 28px; }
+  .layout { padding: 16px 16px 64px; }
+  main h2 { font-size: 23px; margin-top: 48px; }
+  p.lede { padding: 18px; font-size: 16px; }
+  .footer-inner { padding: 24px 16px 40px; }
+}
+@media print {
+  nav.toc, details.toc-mobile, .back-top { display: none !important; }
+  .layout { display: block; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Ad Studio by Brevo · ads.brevo.com · Research report</p>
+    <h1>Fix Ad Studio&#x27;s Foundation, Then Outcompare Everyone</h1>
+    <div class="meta">
+      <span>Comparison pages, GEO/AEO and content strategy</span>
+      <span>Data snapshot 6 Nov 2026</span>
+      <span>168 sources</span>
+      <span>~56 min read</span>
+    </div>
+  </div>
+</header>
+<div class="layout">
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol class="toc-list"><li class="toc-h2"><a href="#a-twenty-eight-competitors-led-by-zeely-arcads-adcreativeai-and-creatify">(a) Twenty-eight competitors, led by Zeely, Arcads, AdCreative.ai and Creatify</a></li><li class="toc-h2"><a href="#b-thirty-comparison-programs-show-a-low-bar-and-two-empty-lanes">(b) Thirty comparison programs show a low bar and two empty lanes</a></li><li class="toc-h3"><a href="#what-ai-ads-vendors-do-and-what-to-take-from-each">What AI-ads vendors do, and what to take from each</a></li><li class="toc-h3"><a href="#what-best-in-class-saas-adds-data-files-switch-offers-and-outcome-units">What best-in-class SaaS adds: data files, switch offers and outcome units</a></li><li class="toc-h3"><a href="#the-page-blueprint-section-by-section">The page blueprint, section by section</a></li><li class="toc-h3"><a href="#comparison-tables-written-as-sentences-with-at-least-one-rival-win">Comparison tables written as sentences, with at least one rival win</a></li><li class="toc-h3"><a href="#proof-offers-and-trust-signals-ad-studio-can-actually-substantiate">Proof, offers and trust signals Ad Studio can actually substantiate</a></li><li class="toc-h3"><a href="#technical-build-schema-and-ai-assistant-hooks">Technical build, schema and AI-assistant hooks</a></li><li class="toc-h3"><a href="#a-dated-competitor-data-file-keeps-every-fact-fresh">A dated competitor-data file keeps every fact fresh</a></li><li class="toc-h2"><a href="#c-a-ten-stage-pipeline-turns-human-evidence-into-pages-that-dont-read-as-ai-slop">(c) A ten-stage pipeline turns human evidence into pages that don't read as AI slop</a></li><li class="toc-h2"><a href="#d-commercial-pages-youtube-and-third-party-lists-drive-visibility-several-geo-tactics-are-myths">(d) Commercial pages, YouTube and third-party lists drive visibility; several GEO tactics are myths</a></li><li class="toc-h3"><a href="#what-the-data-shows">What the data shows</a></li><li class="toc-h3"><a href="#what-practitioners-on-reddit-and-x-say">What practitioners on Reddit and X say</a></li><li class="toc-h3"><a href="#myths-to-stop-paying-for">Myths to stop paying for</a></li><li class="toc-h2"><a href="#e-ad-radar-data-and-a-free-tools-hub-are-the-best-content-bets-after-comparisons">(e) Ad Radar data and a free-tools hub are the best content bets after comparisons</a></li><li class="toc-h3"><a href="#free-ai-tools-as-a-category-in-their-own-right">Free AI tools as a category in their own right</a></li><li class="toc-h2"><a href="#f-the-foundation-must-be-fixed-before-any-comparison-page-can-rank">(f) The foundation must be fixed before any comparison page can rank</a></li><li class="toc-h3"><a href="#indexing-canonicals-and-the-magicfit-split">Indexing, canonicals and the MagicFit split</a></li><li class="toc-h3"><a href="#entity-naming-and-the-claims-ai-engines-repeat">Entity, naming and the claims AI engines repeat</a></li><li class="toc-h3"><a href="#off-site-geo-lists-youtube-disclosed-reddit-and-assistant-integrations">Off-site GEO: lists, YouTube, disclosed Reddit and assistant integrations</a></li><li class="toc-h3"><a href="#measurement">Measurement</a></li><li class="toc-h2"><a href="#g-a-90-day-plan-with-twelve-decisions-to-make-first">(g) A 90-day plan with twelve decisions to make first</a></li><li class="toc-h2"><a href="#conclusion">Conclusion</a></li></ol>
+  </nav>
+  <main>
+    <details class="toc-mobile"><summary>Contents</summary><ol class="toc-list"><li class="toc-h2"><a href="#a-twenty-eight-competitors-led-by-zeely-arcads-adcreativeai-and-creatify">(a) Twenty-eight competitors, led by Zeely, Arcads, AdCreative.ai and Creatify</a></li><li class="toc-h2"><a href="#b-thirty-comparison-programs-show-a-low-bar-and-two-empty-lanes">(b) Thirty comparison programs show a low bar and two empty lanes</a></li><li class="toc-h3"><a href="#what-ai-ads-vendors-do-and-what-to-take-from-each">What AI-ads vendors do, and what to take from each</a></li><li class="toc-h3"><a href="#what-best-in-class-saas-adds-data-files-switch-offers-and-outcome-units">What best-in-class SaaS adds: data files, switch offers and outcome units</a></li><li class="toc-h3"><a href="#the-page-blueprint-section-by-section">The page blueprint, section by section</a></li><li class="toc-h3"><a href="#comparison-tables-written-as-sentences-with-at-least-one-rival-win">Comparison tables written as sentences, with at least one rival win</a></li><li class="toc-h3"><a href="#proof-offers-and-trust-signals-ad-studio-can-actually-substantiate">Proof, offers and trust signals Ad Studio can actually substantiate</a></li><li class="toc-h3"><a href="#technical-build-schema-and-ai-assistant-hooks">Technical build, schema and AI-assistant hooks</a></li><li class="toc-h3"><a href="#a-dated-competitor-data-file-keeps-every-fact-fresh">A dated competitor-data file keeps every fact fresh</a></li><li class="toc-h2"><a href="#c-a-ten-stage-pipeline-turns-human-evidence-into-pages-that-dont-read-as-ai-slop">(c) A ten-stage pipeline turns human evidence into pages that don't read as AI slop</a></li><li class="toc-h2"><a href="#d-commercial-pages-youtube-and-third-party-lists-drive-visibility-several-geo-tactics-are-myths">(d) Commercial pages, YouTube and third-party lists drive visibility; several GEO tactics are myths</a></li><li class="toc-h3"><a href="#what-the-data-shows">What the data shows</a></li><li class="toc-h3"><a href="#what-practitioners-on-reddit-and-x-say">What practitioners on Reddit and X say</a></li><li class="toc-h3"><a href="#myths-to-stop-paying-for">Myths to stop paying for</a></li><li class="toc-h2"><a href="#e-ad-radar-data-and-a-free-tools-hub-are-the-best-content-bets-after-comparisons">(e) Ad Radar data and a free-tools hub are the best content bets after comparisons</a></li><li class="toc-h3"><a href="#free-ai-tools-as-a-category-in-their-own-right">Free AI tools as a category in their own right</a></li><li class="toc-h2"><a href="#f-the-foundation-must-be-fixed-before-any-comparison-page-can-rank">(f) The foundation must be fixed before any comparison page can rank</a></li><li class="toc-h3"><a href="#indexing-canonicals-and-the-magicfit-split">Indexing, canonicals and the MagicFit split</a></li><li class="toc-h3"><a href="#entity-naming-and-the-claims-ai-engines-repeat">Entity, naming and the claims AI engines repeat</a></li><li class="toc-h3"><a href="#off-site-geo-lists-youtube-disclosed-reddit-and-assistant-integrations">Off-site GEO: lists, YouTube, disclosed Reddit and assistant integrations</a></li><li class="toc-h3"><a href="#measurement">Measurement</a></li><li class="toc-h2"><a href="#g-a-90-day-plan-with-twelve-decisions-to-make-first">(g) A 90-day plan with twelve decisions to make first</a></li><li class="toc-h2"><a href="#conclusion">Conclusion</a></li></ol></details>
+    <p class="lede">Ad Studio by Brevo can own comparison search and AI answers for AI ad tools within 90 days, because rivals' pages are weak and two obvious lanes are empty, but it cannot win anything until it stops handing its authority to the legacy MagicFit domain. In a 6 November 2026 sample of 63 answers across seven AI engines, <strong>Ad Studio appeared in 0 of 48 non-brand answers and 0 of 313 cited URLs</strong>; Google returns <strong>one</strong> ads.brevo.com URL; the pricing, CaaS and affiliate pages declare <strong>magicfit.pushowl.com</strong> as their canonical; and Google's AI answers about the product come from a week-old directory listing rather than ads.brevo.com. The field is beatable: Arcads, the most-compared brand, publishes no comparison pages; Zeely has a 6,600-a-month US "review" query and no comparison pages either; incumbents' pages are stale, icon-only, or quote unverified rival prices that AI Overviews repeat word for word; and small vendors such as AdMakeAI and VidGuy win these SERPs and AI answers with dated, specific alternatives pages. The plan spends days 0–30 on redirects, canonicals, indexing, entity naming and claims, including the free plan, which the site calls both "3 free" and "2 free" generations while "50 credits" survives only in a stale MagicFit-era pricing meta description and should be treated as unverified wherever it appears. It then ships four Tier-1 pages (Zeely, Arcads, AdCreative.ai, Creatify), two hubs and a neutral "Arcads vs Creatify" page from a dated competitor-data file, and grows to 28 competitors, a free-tools hub and published Ad Radar data by day 90. The winning page borrows Madgicx's disclosed methodology and AI-assistant buttons, AdMakeAI's cost-per-finished-ad math, Synthesia's footnoted output proof, The Brief's switch steps and PostHog's honesty and data file, then adds what no AI-ads rival publishes: a same-product output gallery and switcher offers. Owned pages are only half the job, because in this category ChatGPT cites vendor homepages, Google's AI cites YouTube and Reddit, and the other assistants cite SaaS "best X" lists; llms.txt, schema used as a GEO lever, and "GEO lifts visibility 40%" are myths. All pricing in this report is the live site's: <strong>Free, Studio Mini $19/month (1,500 credits), Studio $49 (3,000) and Studio Max $199 (6,000)</strong> (<a href="https://ads.brevo.com/pricing" target="_blank" rel="noopener noreferrer">Ad Studio pricing</a>).</p>
+<h2 id="a-twenty-eight-competitors-led-by-zeely-arcads-adcreativeai-and-creatify">(a) Twenty-eight competitors, led by Zeely, Arcads, AdCreative.ai and Creatify</h2>
+<p>The AI-ads market has split into three groups that buyers and AI engines treat separately: URL-to-ad generators for statics and UGC video (Creatify, Arcads, Zeely, AdCreative.ai, Higgsfield Marketing Studio, Topview, Predis), ad-library and research tools (Foreplay, Atria, GetHookd, Minea), and free platform-native generators (Meta Advantage+, Google Pomelli, TikTok Symphony, Amazon Creative Agent). Ad Studio is one of very few products that spans the first two groups for ecommerce, combining Ad Radar research of long-running Meta ads, cloning, and statics plus UGC video drawn from one credit pool. The roster has also moved since most internal sheets were written. <strong>Creatopy is now The Brief</strong> (<a href="https://www.thebrief.ai/alternatives/creatopy/" target="_blank" rel="noopener noreferrer">The Brief</a>), <strong>Captions' parent company is now Mirage</strong> (<a href="https://techcrunch.com/2025/09/04/captions-rebrands-as-mirage-expands-beyond-creator-tools-to-ai-video-research" target="_blank" rel="noopener noreferrer">TechCrunch</a>), <strong>Revealbot is now Bïrch</strong> (<a href="https://bir.ch/pricing" target="_blank" rel="noopener noreferrer">Bïrch</a>), and <strong>Icon</strong>, reported shut down in March 2026 (<a href="https://techstartups.com/2026/03/05/icon-the-ai-ad-startup-shuts-down-after-spending-12m-on-the-icon-com-domain/" target="_blank" rel="noopener noreferrer">TechStartups</a>), now sells <strong>six human-made UGC ads for $1,000</strong> (<a href="https://icon.com/pricing" target="_blank" rel="noopener noreferrer">Icon pricing</a>). Higgsfield Marketing Studio is the notable newcomer: its /ai-ad-generator page led one 6 November snapshot for "ai ad generator", though two other same-day pulls put Wondercraft and AdGPT first, which says more about how unsettled that head term is than about any one winner (<a href="https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/" target="_blank" rel="noopener noreferrer">DataForSEO SERP</a>).</p>
+<p>Priority combines three tests (search demand for comparison keywords, how beatable the current SERP is, and fit with Ad Studio's ecommerce buyer), cross-checked against which brands AI assistants already recommend. Demand is concentrated: <strong>"zeely review" draws 9,900 searches a month globally and 6,600 in the US</strong>, "arcads pricing" draws 2,900, and most other brands' alternative, pricing and review terms sit in the low hundreds, while category terms are larger and growing, with "ai ads" at 18,100, "ugc ads" at 8,100 after doubling in 12 months, and "ai ad generator" at 6,600 (<a href="https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/" target="_blank" rel="noopener noreferrer">DataForSEO volumes</a>). Winnability is unusually good: in four of five "alternatives" and "vs" SERPs checked, a small AI vendor's own page sat in the top five, Reddit held #1 or #2 in five of ten, and G2 or Capterra appeared only once (<a href="https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/" target="_blank" rel="noopener noreferrer">DataForSEO SERP</a>). AI assistants have already formed a shortlist. Across 48 non-brand answers on 6 November, <strong>Creatify was named in 62%, AdCreative.ai in 40%, Arcads in 38%, Canva in 33%, HeyGen in 25% and Predis.ai in 21%</strong>, and when ChatGPT was asked about Ad Studio by name it offered to compare it with Creatify, Predis.ai, InVideo and Canva (<a href="https://cloro.dev/docs/api-reference/endpoint/monitor-chatgpt" target="_blank" rel="noopener noreferrer">cloro ChatGPT scrape</a>). Those are the brands an Ad Studio prospect is already weighing, and they anchor Tier 1.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tier 1 competitor (build by day 60)</th>
+<th>Comparison demand, global / US per month (alternatives + pricing + review + vs)</th>
+<th>Their price vs Ad Studio (6 Nov 2026)</th>
+<th>Concede honestly</th>
+<th>Ad Studio's angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zeely</strong></td>
+<td>~10,750 / ~7,090</td>
+<td>Starter $29.95/mo (list $49.95) for 2,500 credits (<a href="https://zeely.ai/price/" target="_blank" rel="noopener noreferrer">Zeely</a>) vs $19</td>
+<td>Trustpilot about 4.5 from ~2,400–2,670 reviews (<a href="https://www.trustpilot.com/review/zeely.ai?page=6" target="_blank" rel="noopener noreferrer">Trustpilot</a>); brand demand tripled to 60,500/mo</td>
+<td>Cheaper entry, Ad Radar research, Brevo email and SMS follow-through</td>
+</tr>
+<tr>
+<td><strong>Arcads</strong></td>
+<td>~3,650 / ~850</td>
+<td>No public price page; third parties report $110 / $220 / $550 (<a href="https://www.wireflow.ai/blog/arcads-pricing" target="_blank" rel="noopener noreferrer">Wireflow</a>)</td>
+<td>Practitioners' same-script tests rate its actors "the most natural read" (<a href="https://www.reddit.com/r/AI_UGC_Marketing/comments/1vtudx0/ran_the_same_script_through_4_different_tools/" target="_blank" rel="noopener noreferrer">r/AI_UGC_Marketing</a>)</td>
+<td>Published prices; static and video on one plan; Ad Radar. Arcads entered the Shopify App Store on 6 Nov 2026 (<a href="https://apps.shopify.com/arcads" target="_blank" rel="noopener noreferrer">Shopify</a>)</td>
+</tr>
+<tr>
+<td><strong>AdCreative.ai</strong></td>
+<td>~1,080 / ~290</td>
+<td>~$39 Starter for 10 image downloads; video only on higher tiers (third-party) (<a href="https://checkthat.ai/brands/adcreative-ai/pricing" target="_blank" rel="noopener noreferrer">CheckThat</a>)</td>
+<td>Brand awareness; broad format coverage</td>
+<td>Billing trust: Trustpilot ~3.2 from ~4,200 reviews dominated by billing disputes (<a href="https://www.trustpilot.com/review/adcreative.ai?page=7" target="_blank" rel="noopener noreferrer">Trustpilot</a>); brand searches fell from 27,100 to 12,100</td>
+</tr>
+<tr>
+<td><strong>Creatify</strong></td>
+<td>~1,330 / ~450</td>
+<td>$15 / $55 / $95 monthly; "Credits expire after 2 months" (<a href="https://creatify.ai/pricing" target="_blank" rel="noopener noreferrer">Creatify</a>)</td>
+<td>G2 4.8 from ~1,500 reviews (<a href="https://creatify.ai/blog/creatify-g2-summer-2026-leader" target="_blank" rel="noopener noreferrer">Creatify</a>); leader in AI share of voice</td>
+<td>Research plus statics in the same credit pool; top-up packs never expire; Brevo CRM</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three pages that are not one-to-one comparisons also belong in Tier 1, because they target exactly the queries where Ad Studio is invisible today. A <strong>"Best AI ad generators for ecommerce (2026)"</strong> hub targets "ai ad generator" (6,600 global, 1,900 US) and "best ai ad generator" (480/260); a <strong>"Best AI UGC ad tools (2026)"</strong> hub targets "ai ugc ads" (1,300/260 and doubling) on a SERP of weak blogs and glossaries; and a neutral <strong>"Arcads vs Creatify, and where Ad Studio fits"</strong> page targets a small query (180/100) whose AI Overview currently draws on thin small-site pages (<a href="https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/" target="_blank" rel="noopener noreferrer">DataForSEO volumes</a>).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Competitors</th>
+<th>Page type and rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tier 2 (days 60–120)</strong></td>
+<td>Canva Grow; Higgsfield Marketing Studio; Predis.ai; HeyGen (ecommerce angle); Topview; MakeUGC (folded into the Arcads cluster); Foreplay and Atria; Meta Ad Library; Meta Advantage+ with TikTok Symphony and Amazon Creative Agent; Google Pomelli; Billo</td>
+<td>Canva and Higgsfield sit near the top of "ai ad generator", and Canva publishes directly to ad accounts, which must be conceded (<a href="https://www.canva.com/newsroom/news/canva-grow" target="_blank" rel="noopener noreferrer">Canva newsroom</a>). Foreplay, Atria and Meta Ad Library pages position Ad Radar ("winning ads" 1,000/260). One honest "do I need a paid tool if Meta, Google, TikTok and Amazon are free?" page covers native tools; note that Amazon Creative Agent assets may only run on Amazon properties (<a href="https://www.aboutamazon.eu/news/innovation/amazon-ads-launches-creative-agent-new-agentic-ai-tool-that-creates-professional-quality-ads" target="_blank" rel="noopener noreferrer">Amazon</a>). Billo frames AI vs human UGC ($1,000+ per order vs $19–49 a month). Neutral pages: HeyGen vs Synthesia (1,360/600, for authority only), Creatify vs HeyGen, AdCreative.ai vs Canva</td>
+</tr>
+<tr>
+<td><strong>Tier 2 approach page</strong></td>
+<td>The DIY stack: ChatGPT or Claude plus Nano Banana or GPT Image</td>
+<td>Practitioners' real alternative for statics (<a href="https://www.reddit.com/r/FacebookAds/comments/1sukq74/what_are_you_all_using_for_static_ad_creatives/" target="_blank" rel="noopener noreferrer">r/FacebookAds</a>); same format as Webflow's /vs/ai page</td>
+</tr>
+<tr>
+<td><strong>Tier 3 (after day 120, or as hub rows)</strong></td>
+<td>Holo (check query intent first); Pencil; The Brief; Quickads ($199 entry vs $19); Pippit; Captions/Mirage; Invideo; Minea (FR-heavy demand); GetHookd (an SEO rival through its /learn pages); Madgicx</td>
+<td>Comparison demand at or below ~500 a month each, or weaker fit</td>
+</tr>
+<tr>
+<td><strong>Hub rows only</strong></td>
+<td>Synthesia, Omneky, Adobe Express, Tagshop, Motion, Bïrch, BigSpy/PiPiAds, Superscale, Sovran, Icon, Insense</td>
+<td>Low demand or off-ICP. Icon's old comparison pages still rank for "arcads alternatives" after its reported shutdown, which shows how long these pages persist (<a href="https://icon.com/arcads-alternatives" target="_blank" rel="noopener noreferrer">icon.com</a>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Page architecture has to prevent self-cannibalization, which already hurts comparison programs: Founderpath's sibling "Founderpath vs X" pages led Google to rank the wrong URL for <strong>17 of 23</strong> searches (<a href="https://founderpath.com/blog/compare-pages-for-seo" target="_blank" rel="noopener noreferrer">Founderpath</a>). The fix is one deep page per competitor at <code>/compare/ad-studio-vs-{x}</code> that absorbs the vs, pricing and review intents, as AdMakeAI's Arcads page does with sections on pricing and on customer complaints. That page sits beside a separate <code>/alternatives/{x}-alternatives</code> page, neutral pages at <code>/compare/{x}-vs-{y}</code>, and a <code>/compare</code> hub that links them all. Two brand-defense pages complete the set: an honest "Ad Studio alternatives" page modeled on Billo's page that names its own limits (<a href="https://billo.app/blog/billo-alternatives/" target="_blank" rel="noopener noreferrer">Billo</a>), and a "MagicFit is now Ad Studio by Brevo" rename page modeled on The Brief's "Creatopy became The Brief" (<a href="https://www.thebrief.ai/alternatives/creatopy/" target="_blank" rel="noopener noreferrer">The Brief</a>).</p>
+<h2 id="b-thirty-comparison-programs-show-a-low-bar-and-two-empty-lanes">(b) Thirty comparison programs show a low bar and two empty lanes</h2>
+<p>The teardowns covered 18 programs in the AI-ads category and 12 cross-industry leaders, and they show that volume does not win. <strong>Madgicx runs 293 /compare URLs</strong>, including 202 neutral "X vs Y" pages, yet none appeared in any top 10 checked; Topview publishes 418 programmatic alternatives pages across 23 locales; and Arcads, Zeely, MakeUGC, Motion and Canva have no first-party comparison section at all (<a href="https://madgicx.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Madgicx sitemap</a>; <a href="https://www.topview.ai/sitemap.xml" target="_blank" rel="noopener noreferrer">Topview sitemap</a>). The common failures are icon-only tables that parsers and LLMs cannot read, stale dates, contradictory rival prices, template residue left in live pages, FAQ answers missing from the HTML, and broken JSON-LD. Two lanes are empty: <strong>none of the pages reviewed shows the same product rendered by both tools</strong>, and <strong>no AI-ads vendor offers switcher credits or imports a rival's brand kit</strong>, although cross-industry players such as Framer do offer switcher credits.</p>
+<h3 id="what-ai-ads-vendors-do-and-what-to-take-from-each">What AI-ads vendors do, and what to take from each</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Program</th>
+<th>What it does</th>
+<th>Borrow or avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Madgicx</strong></td>
+<td>Recommendation box; tables written in sentences; "Published by Madgicx, one of the products compared"; sources "reviewed 5 November 2026"; logs its own corrections; Ask-AI links to five assistants plus an llm-info page (<a href="https://madgicx.com/compare/arcads-vs-creatify" target="_blank" rel="noopener noreferrer">Madgicx</a>)</td>
+<td><strong>Borrow</strong> disclosure, dated sources, change log, AI links. <strong>Avoid</strong> the scale: its matrix pages rank nowhere checked</td>
+</tr>
+<tr>
+<td><strong>Creatify</strong></td>
+<td>17 /compare and 24 /review/ pages; the /review/ folder carries 33% of traffic to its top 100 pages; AI Overviews lift its unhedged Arcads prices verbatim (<a href="https://creatify.ai/compare/arcads" target="_blank" rel="noopener noreferrer">Creatify</a>; <a href="https://www.google.com/search?q=creatify+vs+arcads" target="_blank" rel="noopener noreferrer">SERP</a>)</td>
+<td><strong>Borrow</strong> review-intent capture. <strong>Avoid</strong> unhedged rival prices and stale pages (its Icon page still calls Icon an AI tool)</td>
+</tr>
+<tr>
+<td><strong>Synthesia vs HeyGen</strong></td>
+<td>Commissioned blind test (1,013 people chose Synthesia's avatars 7 times in 10) with a footnote disclosing who paid; cost-of-editing math; C2PA and EU AI Act row (<a href="https://www.synthesia.io/alternatives/synthesia-vs-heygen" target="_blank" rel="noopener noreferrer">Synthesia</a>)</td>
+<td><strong>Borrow</strong> quantified output proof with an honest footnote</td>
+</tr>
+<tr>
+<td><strong>HeyGen</strong></td>
+<td>30-row text table including openly tied "Yes / Yes" rows; live usage counters; 30 hreflang variants; no date or author (<a href="https://www.heygen.com/alternatives/heygen-vs-synthesia" target="_blank" rel="noopener noreferrer">HeyGen</a>)</td>
+<td><strong>Borrow</strong> honest tie rows. <strong>Avoid</strong> undated pages</td>
+</tr>
+<tr>
+<td><strong>Captions</strong></td>
+<td>About 600 words; "as of October 2026" caveat; three-state cells (✓/~/–); concedes CapCut's larger template library; raw-versus-edited before/after (<a href="https://captions.ai/vs/capcut" target="_blank" rel="noopener noreferrer">Captions</a>)</td>
+<td><strong>Borrow</strong> three-state cells, concession, before/after</td>
+</tr>
+<tr>
+<td><strong>The Brief</strong></td>
+<td>Concession in the H1; a table of what the same $29 buys ("unlimited designs" vs "10 credits"); "Switch in 3 steps"; "Can I use both?" FAQ; a rename page (<a href="https://www.thebrief.ai/alternatives/adcreative-ai/" target="_blank" rel="noopener noreferrer">The Brief</a>)</td>
+<td><strong>Borrow</strong> switch steps, same-money table, rename page</td>
+</tr>
+<tr>
+<td><strong>AdMakeAI</strong></td>
+<td>#2 for "arcads alternatives"; meta description answers the price question; "Last verified: October 18, 2026"; cost of one 30-second ad across six tools; quotes Arcads' clause on actors withdrawing consent (<a href="https://admakeai.com/alternatives-to/arcads" target="_blank" rel="noopener noreferrer">AdMakeAI</a>)</td>
+<td><strong>Borrow</strong> cost-per-output and rights rows</td>
+</tr>
+<tr>
+<td><strong>Arcads listicle</strong></td>
+<td>Answer-first routing by ad type; weighted criteria (cost per finished ad = 20%); a "checked" date per tool; names Google Veo the best built-in option; broken JSON-LD (<a href="https://www.arcads.ai/blog/best-ai-video-ad-generator" target="_blank" rel="noopener noreferrer">Arcads</a>)</td>
+<td><strong>Borrow</strong> the structure for hubs</td>
+</tr>
+<tr>
+<td><strong>Billo</strong></td>
+<td>Honest "Billo alternatives" page listing its own limits; named author; updated 4 Nov 2026 (<a href="https://billo.app/blog/billo-alternatives/" target="_blank" rel="noopener noreferrer">Billo</a>)</td>
+<td><strong>Borrow</strong> for an "Ad Studio alternatives" page</td>
+</tr>
+<tr>
+<td><strong>Hawky</strong></td>
+<td>#2 for "AdCreative.ai alternatives"; pros and cons; eight prefilled AI-assistant links (<a href="https://hawky.ai/alternatives/adcreative" target="_blank" rel="noopener noreferrer">Hawky</a>)</td>
+<td><strong>Borrow</strong> the AI links</td>
+</tr>
+<tr>
+<td><strong>VidGuy, Shhots, JoggAI</strong></td>
+<td>Small vendors that Google AI Mode, AI Overviews and Gemini name as Arcads alternatives because of their own alternatives pages (<a href="https://www.vidguy.ai/articles/arcads-alternatives" target="_blank" rel="noopener noreferrer">VidGuy</a>)</td>
+<td>Evidence that an alternatives page on your own domain buys AI inclusion</td>
+</tr>
+<tr>
+<td><strong>Zeely</strong></td>
+<td>No comparison pages, but its own "best AI ad generators" list made Zeely the #1 pick in Claude and Copilot answers (<a href="https://zeely.ai/blog/best-ai-ad-generators/" target="_blank" rel="noopener noreferrer">Zeely</a>)</td>
+<td>Evidence that self-published hubs work in this category</td>
+</tr>
+<tr>
+<td><strong>Topview</strong></td>
+<td>"18 Topview wins, 5 shared, 0 Arcads wins" scoreboard; FAQ answers exist only in the JS payload (<a href="https://www.topview.ai/alternatives/arcads-alternative" target="_blank" rel="noopener noreferrer">Topview</a>)</td>
+<td><strong>Avoid</strong> implausible scoreboards and hidden FAQs</td>
+</tr>
+<tr>
+<td><strong>Icon</strong></td>
+<td>17-row SVG matrix that parsers cannot read; Arcads named 3 times in ~3,600 words; strong "don't pay until you review 6 scripts" refund (<a href="https://icon.com/arcads-vs-icon" target="_blank" rel="noopener noreferrer">Icon</a>)</td>
+<td><strong>Borrow</strong> the risk reversal. <strong>Avoid</strong> the template</td>
+</tr>
+<tr>
+<td><strong>Foreplay</strong></td>
+<td>"Last Updated June 4, 2025"; quotes Atria at both $139 and $350 on one page; no schema (<a href="https://www.foreplay.co/comparison/atria" target="_blank" rel="noopener noreferrer">Foreplay</a>)</td>
+<td><strong>Avoid</strong></td>
+</tr>
+<tr>
+<td><strong>Atria</strong></td>
+<td>Its AdCreative page actually compares Tubescience and Motion; FAQ answers absent from the HTML (<a href="https://www.tryatria.com/adcreative-alternative" target="_blank" rel="noopener noreferrer">Atria</a>)</td>
+<td><strong>Avoid</strong></td>
+</tr>
+<tr>
+<td><strong>Pencil</strong></td>
+<td>16-criterion icon matrix with criteria chosen to favour Pencil; good case-study cards (<a href="https://trypencil.com/compare/pencil-vs-adcreative" target="_blank" rel="noopener noreferrer">Pencil</a>)</td>
+<td><strong>Borrow</strong> case studies only</td>
+</tr>
+<tr>
+<td><strong>AdCreative.ai</strong></td>
+<td>"H2 Comes here" template residue in a live post; an inaccurate claim about Pencil (<a href="https://www.adcreative.ai/post/adcreative-ai-vs-canva-adobe-express-and-pencil-the-clear-choice-for-high-performing-ads" target="_blank" rel="noopener noreferrer">AdCreative.ai</a>)</td>
+<td><strong>Avoid</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-best-in-class-saas-adds-data-files-switch-offers-and-outcome-units">What best-in-class SaaS adds: data files, switch offers and outcome units</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Program</th>
+<th>What it does</th>
+<th>Borrow or avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PostHog</strong></td>
+<td>One data file per competitor (110 files) feeds every table; rivals correct it through public PRs; AI "scouts" flag drift; head-to-head pages convert <strong>~10%</strong> of readers vs ~4% for roundups and ~2.5% for other blog posts (<a href="https://posthog.com/blog/comparison-content-guide" target="_blank" rel="noopener noreferrer">PostHog</a>)</td>
+<td><strong>Borrow</strong> the data file, corrections path and honesty</td>
+</tr>
+<tr>
+<td><strong>Ramp</strong></td>
+<td>"Compare using AI" button; FAQ newsjacking Capital One's acquisition of Brex; "as of" footnotes; /switch pages (<a href="https://ramp.com/versus/brex" target="_blank" rel="noopener noreferrer">Ramp</a>)</td>
+<td><strong>Borrow</strong> the button and newsjacking. <strong>Avoid</strong> its biased prompt and unsourced rival NPS</td>
+</tr>
+<tr>
+<td><strong>ClickUp</strong></td>
+<td>"Last updated September 28, 2026" on the table; "When Asana may fit better"; lists exactly what its importer leaves behind; 1,496 thin programmatic pages (<a href="https://clickup.com/compare/asana-vs-clickup" target="_blank" rel="noopener noreferrer">ClickUp</a>)</td>
+<td><strong>Borrow</strong> concessions and import honesty. <strong>Avoid</strong> the programmatic pages</td>
+</tr>
+<tr>
+<td><strong>Shopify</strong></td>
+<td>Rows framed as a "buyer concern"; numbered footnotes on every cell; table captioned "as of October 2026" (<a href="https://www.shopify.com/compare/shopify-vs-wix" target="_blank" rel="noopener noreferrer">Shopify</a>)</td>
+<td><strong>Borrow</strong> the table design</td>
+</tr>
+<tr>
+<td><strong>Wise</strong></td>
+<td>Live, server-rendered quotes in an outcome unit ("Recipient gets"); a "How do we collect this data?" link; 10–20x the estimated traffic of any SaaS vs page tested (<a href="https://wise.com/us/compare/" target="_blank" rel="noopener noreferrer">Wise</a>)</td>
+<td><strong>Borrow</strong> the outcome unit: "what $49 makes"</td>
+</tr>
+<tr>
+<td><strong>Linear</strong></td>
+<td>/switch hub with pitch, pilot and migration guides; fees waived while the old contract runs out (<a href="https://linear.app/switch" target="_blank" rel="noopener noreferrer">Linear</a>)</td>
+<td><strong>Borrow</strong> the champion kit and a contract-overlap credit</td>
+</tr>
+<tr>
+<td><strong>Framer</strong></td>
+<td>"Your switch to Framer is on us": 50K AI credits per migrated site (<a href="https://www.framer.com/switch/" target="_blank" rel="noopener noreferrer">Framer</a>)</td>
+<td><strong>Borrow</strong> switcher credits</td>
+</tr>
+<tr>
+<td><strong>Plausible</strong></td>
+<td>"What GA4 does better"; "Why isn't Plausible free while GA4 is free?" (<a href="https://plausible.io/vs-google-analytics" target="_blank" rel="noopener noreferrer">Plausible</a>)</td>
+<td><strong>Borrow</strong> for the free-native-tools page</td>
+</tr>
+<tr>
+<td><strong>Close</strong></td>
+<td>"We're biased, not ignorant"; one-sentence methodology; outbound "Compare on G2 / Capterra" links (<a href="https://close.com/compare/hubspot-alternative" target="_blank" rel="noopener noreferrer">Close</a>)</td>
+<td><strong>Borrow</strong> the tone</td>
+</tr>
+<tr>
+<td><strong>Webflow</strong></td>
+<td>Pages that compare against an approach (/vs/ai, /vs/custom-code) rather than a vendor; a TCO calculator (<a href="https://webflow.com/vs/wordpress" target="_blank" rel="noopener noreferrer">Webflow</a>)</td>
+<td><strong>Borrow</strong> for the DIY-LLM-stack page</td>
+</tr>
+<tr>
+<td><strong>Intercom</strong></td>
+<td>Run Fin on top of Zendesk without migrating (<a href="https://www.intercom.com/compare-intercom-vs-zendesk" target="_blank" rel="noopener noreferrer">Intercom</a>)</td>
+<td><strong>Borrow</strong> coexistence: "keep Canva, add Ad Radar"</td>
+</tr>
+<tr>
+<td><strong>Omnisend, beehiiv, Constant Contact</strong></td>
+<td>Five-assistant buttons with an "act as an independent analyst" prompt; "Choose X if" boxes; rollback FAQ. Constant Contact's harsher paid-ad page is indexable and competes with its own organic page (<a href="https://www.omnisend.com/alternatives-comparison/" target="_blank" rel="noopener noreferrer">Omnisend</a>; <a href="https://www.beehiiv.com/comparisons/mailchimp" target="_blank" rel="noopener noreferrer">beehiiv</a>; <a href="https://www.constantcontact.com/landing1/compare-constant-contact-to-brevo" target="_blank" rel="noopener noreferrer">Constant Contact paid</a>)</td>
+<td><strong>Borrow</strong> the neutral prompt and "Choose X if". <strong>Keep</strong> harsher paid variants noindexed</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-page-blueprint-section-by-section">The page blueprint, section by section</h3>
+<p>The template below is written for "Ad Studio by Brevo vs Arcads" and applies to every Tier 1 and Tier 2 page. Its order follows how AI systems and buyers read: the verdict and dated facts come first because ChatGPT's own index takes its snippet from the first ~150 characters after the H1 (<a href="https://think.resoneo.com/chatgpt-retrieval/" target="_blank" rel="noopener noreferrer">RESONEO</a>), and the evidence, concessions and switch mechanics follow because that is where conversion is won.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Section</th>
+<th>What goes in it</th>
+<th>Borrowed from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Title, meta, H1</td>
+<td>"Ad Studio by Brevo vs Arcads (2026): price, cost per ad, and which to pick"; the meta description answers the money question with a dated fact</td>
+<td>AdMakeAI meta; Creatify title</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Verdict box within ~150 characters of the H1</td>
+<td>A split verdict ("Pick Arcads if you need the most realistic actors; pick Ad Studio if you want research, statics and UGC from one $19–49 plan"); "Facts checked 6 Nov 2026"; "Published by Ad Studio by Brevo, one of the products compared"</td>
+<td>Madgicx recommendation box; beehiiv "Choose X if"; ChatGPT snippet mechanics</td>
+</tr>
+<tr>
+<td>3</td>
+<td>At-a-glance table</td>
+<td>10–14 buyer-concern rows, cells written as text, at least one row the rival wins, footnotes on every cell, tiers stated ("Arcads Starter vs Studio Mini shown")</td>
+<td>Shopify, Captions, HubSpot, Klaviyo's "why it matters" column</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cost per finished ad</td>
+<td>Credits and dollars per static, per 30-second UGC video and per cloned ad; what the free tier, $19 and $49 buy; expiry and rollover rules</td>
+<td>AdMakeAI; The Brief; Wise outcome units</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Same-product output gallery</td>
+<td>One product URL through both tools: unedited first takes, credits used, time to first ad, raw files downloadable</td>
+<td>Nobody does this yet; Synthesia's rigor; Captions' before/after</td>
+</tr>
+<tr>
+<td>6</td>
+<td>"Where Arcads is better"</td>
+<td>Two to four genuine concessions, such as actor realism and language count</td>
+<td>PostHog, Plausible, Captions, The Brief</td>
+</tr>
+<tr>
+<td>7</td>
+<td>How the workflows differ</td>
+<td>Research → clone → static plus UGC from one credit pool; Ad Radar; Brevo email and SMS follow-through</td>
+<td>Madgicx's "generator or platform?" section</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Billing, credits, cancelling</td>
+<td>No card for the free tier, one-click cancel, credits explained, top-ups never expire, monthly credits don't roll over; the rival's terms quoted with a date</td>
+<td>Answers the category's loudest Reddit complaint</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Rights, safety, disclosure</td>
+<td>Clauses about actors withdrawing consent; commercial rights on free tiers; Meta and TikTok AI labels; FTC testimonial rules; C2PA</td>
+<td>AdMakeAI; Synthesia's compliance row</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Switch section and offer</td>
+<td>Three steps; brand-kit import from a store URL; switcher bonus credits; "Can I use both?"</td>
+<td>The Brief; Framer; Intercom</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Proof</td>
+<td>Dated, sourced items only: Ad Radar statistics, named customer results, AppSumo 4.6/5 labelled as MagicFit</td>
+<td>ClickUp's dated G2 line; Mailchimp-style footnotes</td>
+</tr>
+<tr>
+<td>12</td>
+<td>FAQ</td>
+<td>6–10 questions from People Also Ask ("Is Arcads worth it reddit", "What is better than Zeely?", "How to cancel Zeely AI?") plus "Do I need a Brevo account?"; answers in the server HTML</td>
+<td>Ramp/PostHog newsjacking; the Zeely PAA set</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Methodology, sources, change log</td>
+<td>A source and date for every fact; "not observed" never written as "doesn't have"; a corrections inbox; a visible change log</td>
+<td>Madgicx; PostHog; marketingskills evidence rules</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Ask-AI buttons</td>
+<td>ChatGPT, Claude, Perplexity and Google AI Mode, each prefilled with a neutral prompt that cites the page and a facts page</td>
+<td>Omnisend's wording; Madgicx; not Ramp's "why Ramp wins"</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Related pages and author</td>
+<td>Links to hub, alternatives page and relevant X-vs-Y pages; a real, named reviewer with media-buying experience</td>
+<td>Billo byline; Google's fake-author warning (<a href="https://www.searchenginejournal.com/google-fake-author-warning-site-owner-guidance/591806/" target="_blank" rel="noopener noreferrer">SEJ</a>)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="comparison-tables-written-as-sentences-with-at-least-one-rival-win">Comparison tables written as sentences, with at least one rival win</h3>
+<p>The table is the part AI Overviews quote, so it must be machine-readable and defensible: every cell a short sentence or a three-state mark with a qualifier, never a bare icon, inside a server-rendered HTML <code>&lt;table&gt;</code> captioned "as of [date]" and footnoted to the rival's own page. <strong>No rival price goes in without a source.</strong> Arcads shows why: its homepage advertises a 7-day trial, Madgicx says it offers a 72-hour trial and publishes no prices, third parties report $110 for Starter, and Creatify's page says "No free plan, Starter $88/mo", yet <strong>Google's AI Overview repeats Creatify's version</strong> (<a href="https://madgicx.com/compare/arcads-vs-creatify" target="_blank" rel="noopener noreferrer">Madgicx</a>; <a href="https://www.google.com/search?q=creatify+vs+arcads" target="_blank" rel="noopener noreferrer">SERP</a>). Ad Studio's facts will propagate the same way, so a wrong cell is both a legal risk and a GEO liability. The Ad Studio column should read like this today, weaknesses included:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Buyer concern</th>
+<th>Why it matters</th>
+<th>Ad Studio by Brevo, as of 6 Nov 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price to start</td>
+<td>Card-required trials drive the category's billing complaints</td>
+<td>Free tier with no card; generation count being standardized (see section f). Studio Mini $19/mo for 1,500 credits</td>
+</tr>
+<tr>
+<td>Cost per finished ad</td>
+<td>Credits hide real cost</td>
+<td>Vendor estimate of "about 20 video ads or about 300 static ads" per 1,500 credits, roughly $0.95 per video and $0.06 per static on Mini; measure before publishing</td>
+</tr>
+<tr>
+<td>Credit expiry</td>
+<td>Expiring credits feel like lost money</td>
+<td>Monthly credits don't roll over; top-up packs never expire</td>
+</tr>
+<tr>
+<td>Formats</td>
+<td>Fewer tools in the stack</td>
+<td>Static, video and AI UGC presenters; "All models on all plans"</td>
+</tr>
+<tr>
+<td>Winning-ad research</td>
+<td>Angles to test before generating</td>
+<td>Ad Radar ranks long-running ads, <strong>Meta ecommerce ads only, no TikTok</strong></td>
+</tr>
+<tr>
+<td>Publishing</td>
+<td>Time to launch</td>
+<td><strong>Download and upload yourself; no direct publishing</strong> (rivals that publish win this row) (<a href="https://help.brevo.com/hc/en-us/articles/39772555732498-Create-static-and-video-ads-in-Ad-Studio" target="_blank" rel="noopener noreferrer">Brevo help</a>)</td>
+</tr>
+<tr>
+<td>Third-party reviews</td>
+<td>Social proof</td>
+<td>Thin: AppSumo 4.6/5 from 106 reviews (as MagicFit); Shopify 3.4/5 from 3 (<a href="https://appsumo.com/products/magicfit/" target="_blank" rel="noopener noreferrer">AppSumo</a>; <a href="https://apps.shopify.com/magicfit" target="_blank" rel="noopener noreferrer">Shopify</a>)</td>
+</tr>
+<tr>
+<td>Who is behind it</td>
+<td>Continuity, given Icon's collapse</td>
+<td>Brevo</td>
+</tr>
+</tbody>
+</table></div>
+<p>The cost-per-ad row will expose two problems that have to be settled before any page ships. The first is that the sources disagree: one reviewer reports the $19 plan covers "about 5 videos" by the vendor's own estimate (<a href="https://saaspic.com/tools/magicfit/" target="_blank" rel="noopener noreferrer">SaaSPic</a>) and another cites "50+ credits per video" (<a href="https://ltdstash.com/learn/magicfit-lifetime-deal-review/" target="_blank" rel="noopener noreferrer">LTD Stash</a>), so only a measured test at a fixed length and model will do. AdMakeAI's 30-second benchmark puts Arcads at ~$11 (reported), Creatify at $2.73 and Topview at $1.08 (<a href="https://admakeai.com/alternatives-to/arcads" target="_blank" rel="noopener noreferrer">AdMakeAI</a>); if Ad Studio's ~$0.95 holds on the same basis it becomes the headline of every page, and if it does not, the page must say so. The second is that <strong>Studio Max costs about 2.6 times as much per credit as Studio Mini</strong> ($199 for 6,000 credits against $19 for 1,500), so the pricing page has to explain what else Max includes before any per-credit table goes live.</p>
+<h3 id="proof-offers-and-trust-signals-ad-studio-can-actually-substantiate">Proof, offers and trust signals Ad Studio can actually substantiate</h3>
+<p>Proof is the weakest part of the current site, which is why it matters most here. <strong>"★★★★★ 4.9/5" has no source and matches no public rating</strong>, and <strong>"Trusted by 40,000+ brands"</strong> is the install base of Brevo PushOwl rather than of Ad Studio (<a href="https://ads.brevo.com/caas" target="_blank" rel="noopener noreferrer">Ad Studio CaaS page</a>). Comparison pages amplify whatever the site claims, so they should carry only proof that survives scrutiny: Brevo's backing; the PushOwl lineage, with its 4.8/5 from 2,312 Shopify reviews clearly labelled as PushOwl's (<a href="https://apps.shopify.com/pushowl" target="_blank" rel="noopener noreferrer">Shopify</a>); dated, measured output tests; Ad Radar statistics; and three to five named customer results with numbers, the format behind Pencil's case-study cards and Synthesia's named quotes.</p>
+<p>Offers are where Ad Studio can be unique in the category. No AI-ads rival offers switcher credits or imports a rival's brand kit, and Icon's "don't pay until you review six scripts, full refund" shows how far risk reversal can go. Four offers would fill the gap: a month of credits for anyone who shows a current Arcads, AdCreative.ai or Creatify invoice, the analog of Linear's contract waiver and Framer's 50K credits; brand-kit import from the buyer's store URL on day one; Creatives as a Service positioned as the done-for-you answer to Icon's $1,000 human UGC; and an agency bounty modeled on Ramp's $500 per client moved (<a href="https://ramp.com/switch-from-bill" target="_blank" rel="noopener noreferrer">Ramp</a>).</p>
+<p>Trust signals should be standard on every page: the publisher disclosure, a real named reviewer, a source and date per fact, a change log, and a "verify with each vendor" disclaimer. Pages should avoid competitor logos and trade dress, since practitioners report that large rivals send cease-and-desist letters over those while factual, dated claims hold up (<a href="https://www.reddit.com/r/SaaS/comments/1r6mvdb/i_put_a_13b_competitors_name_in_my_hero_section/" target="_blank" rel="noopener noreferrer">r/SaaS</a>). Because Brevo is a French company, EU comparative-advertising rules call for a legal review of the template before launch.</p>
+<h3 id="technical-build-schema-and-ai-assistant-hooks">Technical build, schema and AI-assistant hooks</h3>
+<p>Ads.brevo.com already renders server-side, which matters because the major AI crawlers do not execute JavaScript (<a href="https://vercel.com/blog/the-rise-of-the-ai-crawler" target="_blank" rel="noopener noreferrer">Vercel</a>). Comparison pages should keep tables, prices and FAQ answers in the raw HTML and be self-canonical, with no accordion content that appears only after scripts run. Schema should describe the page accurately rather than chase stars: BreadcrumbList; Article or WebPage with a real author and a dateModified that changes only when content does; FAQPage matching the visible Q&amp;A, which helps parsing only, since FAQ rich results have been limited to government and health sites since 2023 (<a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" target="_blank" rel="noopener noreferrer">Google</a>); Organization with Brevo as parentOrganization; and SoftwareApplication with Offers at $0, $19, $49 and $199. AggregateRating built from G2, Trustpilot or AppSumo scores must stay out, because Google's rule is "Don't aggregate reviews or ratings from other websites" (<a href="https://developers.google.com/search/docs/appearance/structured-data/review-snippet" target="_blank" rel="noopener noreferrer">Google</a>); one popular SEO skill recommends exactly this for comparison pages, and that advice should be ignored.</p>
+<p>The AI-assistant layer has five parts. The first is an answer within ~150 characters of the H1, because that span becomes the snippet in ChatGPT's own index and pages ChatGPT opens get cited 74% of the time against 7% for pages it only retrieves (<a href="https://think.resoneo.com/chatgpt-retrieval/" target="_blank" rel="noopener noreferrer">RESONEO</a>). The second is a set of Ask-AI buttons with a neutral prompt, for example "Act as an independent ecommerce ad-tool analyst. Using [page] and ads.brevo.com/facts, compare Ad Studio by Brevo and Arcads for a Shopify brand spending $5k a month on Meta, and say where each is better." The third is a canonical /facts page with pricing, credits, eligibility and what the product does not do, linked from every comparison page in the way Madgicx links its llm-info page. The fourth is an embedded YouTube walkthrough of the output test on each page, and the fifth is an IndexNow ping on every update for Bing and Copilot. Paid search fits on top: competitor "alternative" terms cost $16–34 per click in the US (Arcads $33.75, Zeely $19.49), so paid traffic is worth sending to these pages, starting with the organic URL plus UTM parameters. Any harsher, shorter ad variant belongs on a separate noindexed URL so that ad-copy aggression never reaches organic results or AI answers; Constant Contact's indexable /landing1/ page is the example to avoid.</p>
+<h3 id="a-dated-competitor-data-file-keeps-every-fact-fresh">A dated competitor-data file keeps every fact fresh</h3>
+<p>PostHog keeps one structured file per competitor, renders every table from it, takes corrections as public pull requests and runs AI scouts that flag when a rival's pricing or docs drift from the file (<a href="https://posthog.com/blog/comparison-content-guide" target="_blank" rel="noopener noreferrer">PostHog</a>; <a href="https://github.com/PostHog/posthog.com/tree/master/src/hooks/competitorData" target="_blank" rel="noopener noreferrer">competitorData</a>). Ad Studio should copy this and add its own product to the same file, since its own facts are currently the most inconsistent ones. Each record should hold the competitor, field, value, unit and plan tier; the source URL and source type (vendor page, third party, or measured by Ad Studio); the date checked, who checked it and the next due date; and a confidence level, a note and the change history. That one file then powers every comparison and cost-per-ad table, the FAQ answers, hub rows, the /facts page and the JSON-LD Offers.</p>
+<p>Freshness runs on three mechanisms. Firecrawl or crawl4ai snapshots each rival's pricing page weekly and opens a ticket on any diff; pricing fields go stale after 30 days and feature fields after 90; and renames, acquisitions (Appier bought AdCreative.ai for $38.7M (<a href="https://www.appier.com/en/press-media/appier-acquires-adcreative.ai-in-strategic-move" target="_blank" rel="noopener noreferrer">Appier</a>)), new app-store listings and model launches each trigger a refresh and a dated FAQ entry. The evidence rules come from the marketingskills <code>competitors</code> skill: "'Not observed' is not 'doesn't have,'" date every fact, and separate fact from interpretation (<a href="https://github.com/coreyhaines31/marketingskills/blob/main/skills/competitors/SKILL.md" target="_blank" rel="noopener noreferrer">marketingskills</a>). Stability matters as much as freshness, because ChatGPT's cache ignored <code>no-store</code>, kept serving one copy after more than 90 days, and 13% of its snippets lagged the crawl by over a month (<a href="https://think.resoneo.com/chatgpt-retrieval/" target="_blank" rel="noopener noreferrer">RESONEO</a>). When a price changes, the whole page and the facts page should update together rather than one cell at a time.</p>
+<h2 id="c-a-ten-stage-pipeline-turns-human-evidence-into-pages-that-dont-read-as-ai-slop">(c) A ten-stage pipeline turns human evidence into pages that don't read as AI slop</h2>
+<p>Google does not penalize AI-written text as such; it penalizes scaled, low-value pages and invented authors (<a href="https://www.searchenginejournal.com/google-fake-author-warning-site-owner-guidance/591806/" target="_blank" rel="noopener noreferrer">SEJ</a>). Practitioner reports point the same way. One site that went from 5 to 20 AI pages a week fell from ~200 clicks a day to 10 after a spam update, and a team pushed by management to publish 10–50 AI articles a week drew a manual action (<a href="https://www.reddit.com/r/SEO/comments/1wg1jyz/pls_helpnforced_by_management_to_publish_scaled/" target="_blank" rel="noopener noreferrer">r/SEO</a>). The pipelines that hold up start from human input (interviews, tests, first-party data) and add a separate claim-checking pass, because invented statistics are the biggest operational failure (<a href="https://www.reddit.com/r/content_marketing/comments/1ulcvyd/the_real_bottleneck_of_ai_content_isnt_drafting/" target="_blank" rel="noopener noreferrer">r/content_marketing</a>). The stack below gives each stage one owning tool; star counts and maintenance status were checked on 6 November 2026.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tools</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0. Setup</td>
+<td>marketingskills context file <code>.agents/product-marketing.md</code> (<a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer">repo</a>, 58.8k stars, v2.14.0); Vale v3.26.0 with Microsoft, Google and readability styles plus a custom Ad Studio style (<a href="https://github.com/vale-cli/vale" target="_blank" rel="noopener noreferrer">Vale</a>); FeedHive <code>patterns.json</code> to seed custom rules (<a href="https://github.com/FeedHive/ai-slop-detector" target="_blank" rel="noopener noreferrer">FeedHive</a>)</td>
+<td>One source of approved claims, the correct name ("Ad Studio by Brevo"), the fixed pricing and banned phrases. No maintained Vale package for AI tells exists, so FeedHive's 120 patterns fill the gap</td>
+</tr>
+<tr>
+<td>1. Research</td>
+<td>deep-research and agent-reach / web-access (installed); Firecrawl MCP or crawl4ai for dated snapshots (<a href="https://github.com/firecrawl/firecrawl-mcp-server" target="_blank" rel="noopener noreferrer">Firecrawl</a>); DataForSEO MCP (<a href="https://github.com/dataforseo/mcp-server-typescript" target="_blank" rel="noopener noreferrer">repo</a>) or treg; mcp-gsc (<a href="https://github.com/AminForou/mcp-gsc" target="_blank" rel="noopener noreferrer">repo</a>)</td>
+<td>Demand, SERPs, rival facts, AI citations; snapshots feed the data file</td>
+</tr>
+<tr>
+<td>2. Evidence</td>
+<td>Humans: same-product runs in Ad Studio and each rival; media-buyer interviews; Ad Radar pulls</td>
+<td>The original, first-hand input Google asks for, and the step generic pipelines skip</td>
+</tr>
+<tr>
+<td>3. Brief</td>
+<td>marketingskills <code>competitors</code> (Page Set Plan, Competitor Data File) and <code>competitor-profiling</code>; claude-seo <code>seo-content-brief</code> (<a href="https://github.com/AgriciDaniel/claude-seo" target="_blank" rel="noopener noreferrer">claude-seo</a>, 27k stars, v2.5.0)</td>
+<td>Intent, outline, FAQ from People Also Ask</td>
+</tr>
+<tr>
+<td>4. Draft</td>
+<td>marketingskills <code>competitors</code> and <code>copywriting</code>; brevo-free-tool-builder (installed) for tools, with Brevo brand tokens swapped for Ad Studio's</td>
+<td>One template per page type</td>
+</tr>
+<tr>
+<td>5. Claim check</td>
+<td>marketingskills evidence rules; a claim ledger linking every rival fact to a snapshot; legal review</td>
+<td>Every statistic, price and date verified</td>
+</tr>
+<tr>
+<td>6. De-slop</td>
+<td>humanizer v3.1.0 (<a href="https://github.com/blader/humanizer" target="_blank" rel="noopener noreferrer">repo</a>, 65k stars; the installed copy is the older v2.9.x line, so upgrade it); marketingskills <code>copy-editing</code> "Seven Sweeps"; slop-guard as a 0–100 score gate (<a href="https://github.com/eric-tramel/slop-guard" target="_blank" rel="noopener noreferrer">repo</a>); Vale lint; stop-slop as a final checklist (<a href="https://github.com/hardikpandya/stop-slop" target="_blank" rel="noopener noreferrer">repo</a>)</td>
+<td>humanizer rewrites; slop-guard scores without an LLM judge, so it can block publishing below a threshold</td>
+</tr>
+<tr>
+<td>7. Optimize</td>
+<td>marketingskills <code>ai-seo</code> and <code>schema</code>; claude-seo <code>seo-geo</code> and <code>seo-page</code></td>
+<td>Answer-first openings, tables, JSON-LD; ignore claude-seo's AggregateRating advice for comparison pages</td>
+</tr>
+<tr>
+<td>8. QA</td>
+<td>google/schema-dts plus adobe/structured-data-validator in CI (<a href="https://github.com/adobe/structured-data-validator" target="_blank" rel="noopener noreferrer">validator</a>); Unlighthouse (<a href="https://github.com/harlan-zw/unlighthouse" target="_blank" rel="noopener noreferrer">repo</a>); Rich Results Test</td>
+<td>Schema matches visible text; performance</td>
+</tr>
+<tr>
+<td>9. Monitor</td>
+<td>mcp-gsc and the GA4 MCP (<a href="https://github.com/googleanalytics/google-analytics-mcp" target="_blank" rel="noopener noreferrer">repo</a>); elmo (<a href="https://github.com/elmohq/elmo" target="_blank" rel="noopener noreferrer">repo</a>) or limelit (<a href="https://github.com/limelit-co/open" target="_blank" rel="noopener noreferrer">repo</a>, built-in MCP server); Bing AI Performance; GEOInflow or CDN logs; claude-seo <code>seo-drift</code></td>
+<td>Rankings, AI citations, AI-crawler fetches, drift in rival facts</td>
+</tr>
+</tbody>
+</table></div>
+<p>Several popular tools should stay out of the stack. Ryze's open-seo-mcp-skills gathered 8.9k stars in about ten weeks for a 14-file repo that funnels users to a hosted connector for their Search Console and GA4 data (<a href="https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills" target="_blank" rel="noopener noreferrer">Ryze</a>). "Detector-bypass" humanizers and AI-text detectors optimize the wrong thing, since detectors flag human writing too and beating them does not make content more expert. sam-paech's research code needs local model weights, stale llms.txt generators and the archived Ahrefs and Oxylabs MCP servers are dead ends, and geo-seo-claude's <code>curl | bash</code> installer should not run before its scripts are reviewed (<a href="https://github.com/zubair-trabzada/geo-seo-claude" target="_blank" rel="noopener noreferrer">geo-seo-claude</a>). One policy constraint is new: Anthropic's usage policy, effective 12 November 2026, prohibits using Claude to "manipulate the sources from which search engines or AI systems draw answers" with content that misrepresents who wrote it or how independent it is (<a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener noreferrer">Anthropic</a>). The pipeline must therefore never produce undisclosed Reddit comments, fake reviews or "independent" review sites, and it should publish a few pages per week per template rather than spiking volume.</p>
+<h2 id="d-commercial-pages-youtube-and-third-party-lists-drive-visibility-several-geo-tactics-are-myths">(d) Commercial pages, YouTube and third-party lists drive visibility; several GEO tactics are myths</h2>
+<h3 id="what-the-data-shows">What the data shows</h3>
+<p>Google's May 2026 guide says optimizing for generative AI search "is still SEO" (<a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener noreferrer">Google</a>), but each assistant retrieves differently. AI Overviews, AI Mode and Gemini sit on Google's index; ChatGPT mixes its own index with scraped Google results, and its paid "thinking" mode drew <strong>75% of results from Google</strong> (<a href="https://think.resoneo.com/chatgpt-retrieval/" target="_blank" rel="noopener noreferrer">RESONEO</a>); Claude searches through Brave, Copilot through Bing, and Perplexity runs its own index. Ranking and citation overlap only loosely: one study found 94.4% of B2B SaaS AI Overviews cited at least one top-10 page (<a href="https://slatehq.com/blog/google-ai-overview-study" target="_blank" rel="noopener noreferrer">Slate</a>), while another found only 38% of AIO-cited pages rank top 10, down from 76% a year earlier (<a href="https://www.searchenginejournal.com/google-ai-overview-citations-from-top-ranking-pages-drop-sharply/568637/" target="_blank" rel="noopener noreferrer">SEJ on Ahrefs</a>). The economics favour comparison pages. Comparison queries trigger an AI Overview <strong>95.4%</strong> of the time, and pages cited in it get <strong>about 120% more clicks per impression than uncited pages</strong>, though still 38% fewer than when no AI Overview appears (<a href="https://seerinteractive.com/insights/aio-impact-on-google-ctr-2026-update" target="_blank" rel="noopener noreferrer">Seer</a>); position-1 CTR falls <strong>58%</strong> when an AI Overview is present (<a href="https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/" target="_blank" rel="noopener noreferrer">Ahrefs</a>). AI referrals remain small at about <strong>0.3–1% of total site traffic</strong> (<a href="https://www.superlines.io/articles/ai-search-statistics/" target="_blank" rel="noopener noreferrer">Superlines</a>) and convert at a median 1.26x organic, only 1.01x for ecommerce (<a href="https://www.siegemedia.com/research" target="_blank" rel="noopener noreferrer">Siege Media</a>), so their value is influence on shortlists more than direct sessions.</p>
+<p>In this category, each engine cites a different kind of source, which means no single tactic covers them all. The 6 November sample breaks down as follows (<a href="https://cloro.dev/docs/api-reference/endpoint/monitor-chatgpt" target="_blank" rel="noopener noreferrer">cloro</a>):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Most-cited source types on non-brand prompts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT</td>
+<td>Vendor homepages, <strong>48%</strong> of citations, with <strong>zero Reddit or YouTube</strong></td>
+</tr>
+<tr>
+<td>Google AI Overview</td>
+<td>YouTube, <strong>48%</strong></td>
+</tr>
+<tr>
+<td>Google AI Mode</td>
+<td>YouTube <strong>26%</strong>, Reddit <strong>22%</strong></td>
+</tr>
+<tr>
+<td>Gemini, Perplexity (API), Claude, Copilot</td>
+<td>SaaS-company "best X" lists, <strong>50–67%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>G2, Capterra, Product Hunt, There's An AI For That and Futurepedia were <strong>never cited on non-brand prompts</strong>. Vendors' own alternatives pages got their authors named: VidGuy and JoggAI appear as Arcads alternatives this way, and Zeely's own list put it #1 in Claude and Copilot. For "X vs Y" prompts ChatGPT cited only the two vendors' own sites, consistent with a LinkedIn study finding 95% of ChatGPT "X vs Y" citations go to the products' own pages (<a href="https://www.linkedin.com/posts/kirill-sajaev-14549715_chatgpt-geo-saasmarketing-activity-7514310216591577089-vJ1s" target="_blank" rel="noopener noreferrer">Kirill Sajaev</a>). The sources therefore split along the funnel: "Ad Studio vs X" pages control the narrative once a buyer knows the name, while alternatives pages, hubs and third-party lists create discovery.</p>
+<p>Off-site mentions are the strongest correlate of AI visibility overall. Ahrefs' November 2026 study of 10,000 brands found correlations of <strong>0.75 for Reddit mentions, 0.70 for web mentions and 0.64 for YouTube mentions</strong> (<a href="https://ahrefs.com/blog/mention-types-ai-visibility/" target="_blank" rel="noopener noreferrer">Ahrefs</a>), against 0.218 for backlinks in an earlier study. New brands are the exception that matters for Ad Studio: in Ahrefs' controlled experiment, <strong>82% of a new brand's new AI mentions came through its own pages</strong>, against 6% for an established brand, and Copilot responded fastest, going from about 0% to 65% of answers in three months while ChatGPT never named the new brand (<a href="https://ahrefs.com/blog/self-promotional-content-ai-seo-experiment/" target="_blank" rel="noopener noreferrer">Ahrefs experiment</a>). Ad Studio is a new entity to these systems, so its owned pages carry unusual weight now, provided they are indexed. Freshness helps too: cited pages are about 26% fresher than the organic average (<a href="https://ahrefs.com/blog/do-ai-assistants-prefer-to-cite-fresh-content/" target="_blank" rel="noopener noreferrer">Ahrefs</a>), and in 252,000 controlled trials explicit prices and recent dates improved citation (<a href="https://arxiv.org/html/2607.14035v1" target="_blank" rel="noopener noreferrer">GEO survey</a>).</p>
+<p>Comparison pages also convert. PostHog's head-to-head pages convert <strong>~10%</strong> of readers against ~4% for roundups and ~2.5% for other blog posts, and Grow and Convert's client data shows <strong>8.43%</strong> for "alternatives" keywords, 5.45% for "X vs Y" and 4.85% for category terms (<a href="https://posthog.com/blog/comparison-content-guide" target="_blank" rel="noopener noreferrer">PostHog</a>; <a href="https://founderpath.com/blog/compare-pages-for-seo" target="_blank" rel="noopener noreferrer">Founderpath</a>). A 117-brand study found that a brand's own comparison page moved its non-branded AI mentions by only +0.2 points (<a href="https://www.searchable.com/blog/comparison-pages-ai-search" target="_blank" rel="noopener noreferrer">Searchable</a>), so these pages should be judged on comparison prompts and signups, not overall share of voice. The main risk is Google's reviews system, which explicitly covers "head-to-head comparisons" and "ranked lists" (<a href="https://developers.google.com/search/docs/appearance/reviews-system" target="_blank" rel="noopener noreferrer">Google</a>). From January through the May 2026 core update, analysts documented SaaS sites relying on self-promotional "best X" lists and scaled alternatives pages losing visibility (<a href="https://www.seroundtable.com/googleself-promotional-listicles-update-40873.html" target="_blank" rel="noopener noreferrer">SER</a>), and when AI Overviews cited a brand's self-ranked list, they recommended other brands <strong>69%</strong> of the time (<a href="https://searchengineland.com/google-ai-overviews-cite-self-serving-listicles-recommend-competitors-480573" target="_blank" rel="noopener noreferrer">SEL</a>). Yet such lists still earn about 11% of software citations (<a href="https://docs.peec.ai/research/self-promotional-listicles.md" target="_blank" rel="noopener noreferrer">Peec</a>), and in this category they demonstrably got Zeely and Tolstoy recommended. The resolution is two hubs rather than twenty, each with a disclosed, weighted methodology and real same-brief tests, ranking Ad Studio by honest fit ("best for research-to-ad in one plan") rather than #1 in every category.</p>
+<h3 id="what-practitioners-on-reddit-and-x-say">What practitioners on Reddit and X say</h3>
+<p>SEO practitioners largely agree with the data. The consensus is that "GEO is mostly SEO", that informational traffic is collapsing (one r/SaaS commenter reports a 40–60% drop on informational queries) while commercial intent holds, and that video is underused: Lily Ray's advice is "Time to start targeting keywords with videos, not blogs" (<a href="https://x.com/lilyraynyc/status/2118428097909502357" target="_blank" rel="noopener noreferrer">X</a>). Kevin Indig and Cyrus Shepard call Bing's new AI citation data "the closest we have to classic search data" (<a href="https://x.com/Kevin_Indig/status/2110257382303650241" target="_blank" rel="noopener noreferrer">X</a>); Tim Soulo says "The only competitive advantage left in content marketing is EFFORT" (<a href="https://x.com/timsoulo/status/2108250952360964199" target="_blank" rel="noopener noreferrer">X</a>); and Peep Laja reports that 88% of 101 CMOs use AI recommendations to discover vendors, so pricing should be public (<a href="https://x.com/peeplaja/status/2100608395120124407" target="_blank" rel="noopener noreferrer">X</a>). The warnings are equally consistent: Patrick Stox counts four Google spam updates in 2026 (<a href="https://x.com/patrickstox/status/2104642975712088473" target="_blank" rel="noopener noreferrer">X</a>), and John Mueller warns that Google can "lose faith" in a site after low-value programmatic pages (<a href="https://www.reddit.com/r/SEO/comments/1wa0wey/johnmu_google_can_lose_faith_in_sites_based_on/" target="_blank" rel="noopener noreferrer">r/SEO</a>). Reddit seeding has turned hostile. The Verge reports Reddit catching <strong>25,000 spammy posts a day</strong> (<a href="https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam" target="_blank" rel="noopener noreferrer">The Verge</a>), Reddit told investors it is "skeptical of GEO" (<a href="https://x.com/glenngabe/status/2116138583895495002" target="_blank" rel="noopener noreferrer">X</a>), and Lily Ray's verdict on AI-written brand comments was "Stop. Just stop. It's not working" (<a href="https://x.com/lilyraynyc/status/2116248573516120177" target="_blank" rel="noopener noreferrer">X</a>). What survives is disclosed, low-frequency, genuinely helpful participation, with self-mentions under 10–20% of activity (<a href="https://www.reddit.com/r/SaaS/comments/1nilrpb/lost_10_reddit_accounts_trying_to_promote_my_saas/" target="_blank" rel="noopener noreferrer">r/SaaS</a>).</p>
+<p>Ad-buying practitioners describe the category in terms the pages should mirror. The typical stack is split: Claude plus Nano Banana for statics, Arcads or Creatify for UGC, and Foreplay as the swipe file. The top reply to a request for a tool that is "fast, high-quality and ecommerce-tailored" was "Pick 2", and another reply named "the repeatable brief, not the generator" as the real time saver (<a href="https://www.reddit.com/r/ecommerce/comments/1wir6dh/which_ai_tool_do_you_use_to_quickly_create_meta/" target="_blank" rel="noopener noreferrer">r/ecommerce</a>). Billing complaints are louder than quality complaints; one user's hour-long AdCreative.ai trial ended up costing $2,241 (<a href="https://www.reddit.com/r/SaaS/comments/1vndtlj/i_tried_adcreativeai_for_about_an_hour_9_months/" target="_blank" rel="noopener noreferrer">r/SaaS</a>). The performance data is consistent, if self-reported. Across 40+ accounts, AI statics matched human statics (1.83% CTR and $28.75 CPA vs 1.89% and $32.15), while fully AI UGC lost ($49.60 vs $36.20 CPA, with fatigue in about two weeks instead of three) (<a href="https://www.linkedin.com/posts/theevancarroll_human-vs-ai-ugc-data-across-40-accounts-activity-7512971183173066752-l7To" target="_blank" rel="noopener noreferrer">Evan Carroll</a>), and AI-assisted production nearly matched human ROAS (4.7 vs 4.8) at about a twelfth of the production cost (<a href="https://www.reddit.com/r/advertising/comments/1sau864/i_tested_ai_vs_human_ads_with_92k_in_ad_spend/" target="_blank" rel="noopener noreferrer">r/advertising</a>). After Meta's Andromeda change, near-identical hook variations "isn't enough anymore" and distinct concepts win (<a href="https://www.reddit.com/r/FacebookAds/comments/1ng8ves/i_was_wrong_about_322_metas_andromeda_update/" target="_blank" rel="noopener noreferrer">r/FacebookAds</a>), and the norm on cloning is to "reverse engineer the framework" rather than copy assets (<a href="https://www.reddit.com/r/FacebookAds/comments/1s3mfqv/looking_to_copy_creatives_from_competitors/" target="_blank" rel="noopener noreferrer">r/FacebookAds</a>). Buyers also say they cannot tell real reviews from plugs, and the most-engaged "Top 10 AI ad generators" thread is full of vendor promotion (<a href="https://www.reddit.com/r/FacebookAds/comments/1r7ozgk/top_10_ai_ad_generators_after_spending_14m/" target="_blank" rel="noopener noreferrer">r/FacebookAds</a>), which makes open disclosure a differentiator. On X, the category grows through influencers, model launches and assistant integrations: Arcads claims it grew "from $5M → $20M ARR this year with influencer marketing" (<a href="https://x.com/arcads_ai" target="_blank" rel="noopener noreferrer">X</a>), posts announcing a new model inside a tool routinely draw 100K+ views, and Foreplay (<a href="https://x.com/foreplay_co/status/2067613770197680539" target="_blank" rel="noopener noreferrer">X</a>) and Higgsfield (<a href="https://x.com/higgsfield_ai/status/2118517745138778461" target="_blank" rel="noopener noreferrer">X</a>) shipped MCP servers while Arcads announced a ChatGPT plugin. For Ad Studio's pages, that means leading with statics, research and honest billing, positioning UGC presenters as a hook-testing layer rather than a creator replacement, and answering "why not just ChatGPT plus Nano Banana?" directly.</p>
+<h3 id="myths-to-stop-paying-for">Myths to stop paying for</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Claim</th>
+<th>Verdict</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>llms.txt gets you cited</td>
+<td><strong>Myth</strong> (keep the existing file; it is free)</td>
+<td>No correlation across ~300k domains (<a href="https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/" target="_blank" rel="noopener noreferrer">SEJ</a>); 97% of 137k files got zero fetches (<a href="https://www.reddit.com/r/TechSEO/comments/1u6ir5p/we_analyzed_137k_sites_97_of_llmstxt_files_never/" target="_blank" rel="noopener noreferrer">r/TechSEO</a>); Google doesn't use it</td>
+</tr>
+<tr>
+<td>Schema or FAQ markup boosts AI citations</td>
+<td><strong>Myth as a GEO lever</strong></td>
+<td>Controlled test on 1,885 pages: no lift in ChatGPT or AI Mode, −4.6% in AI Overviews (<a href="https://ahrefs.com/blog/schema-ai-citations/" target="_blank" rel="noopener noreferrer">Ahrefs</a>)</td>
+</tr>
+<tr>
+<td>GEO rewriting lifts visibility 40%</td>
+<td><strong>Overstated</strong></td>
+<td>A lab result with five fixed sources; only 3 of 54 setups showed gains in C-SEO Bench; the 2026 survey rejects the claim (<a href="https://arxiv.org/html/2607.14035v1" target="_blank" rel="noopener noreferrer">GEO survey</a>)</td>
+</tr>
+<tr>
+<td>Google penalizes AI content</td>
+<td><strong>Myth, with a catch</strong></td>
+<td>It penalizes scaled, low-value pages and fake authors</td>
+</tr>
+<tr>
+<td>Seeding Reddit puts you in AI answers</td>
+<td><strong>Risky and failing</strong></td>
+<td>Moderator bans; Reddit's GEO skepticism; Anthropic's policy; Reddit's citation share fell from 3.65% to 1.19% in Q3 2026 (<a href="https://www.scaletheory.ai/blog/reddit-youtube-ai-search-visibility" target="_blank" rel="noopener noreferrer">ScaleTheory</a>)</td>
+</tr>
+<tr>
+<td>Ranking #1 means being cited</td>
+<td><strong>Partly</strong></td>
+<td>Only 38% of AI Overview citations rank top 10</td>
+</tr>
+<tr>
+<td>"Prompt search volume" and "400% AI-visibility lifts"</td>
+<td><strong>Unreliable</strong></td>
+<td>"There is no such thing as 'prompt search volume'" (<a href="https://x.com/timsoulo/status/2092601455819501740" target="_blank" rel="noopener noreferrer">X</a>); Indig could not link AI visibility to branded traffic (<a href="https://x.com/Kevin_Indig/status/2113570123630117350" target="_blank" rel="noopener noreferrer">X</a>)</td>
+</tr>
+<tr>
+<td>G2 and Capterra drive AI picks in this category</td>
+<td><strong>Not here</strong></td>
+<td>Never cited in 48 non-brand answers; still needed for brand queries</td>
+</tr>
+<tr>
+<td>More pages means more coverage</td>
+<td><strong>Myth here</strong></td>
+<td>Madgicx's 202 neutral pages rank nowhere checked; Atria's programmatic /ads/meta pages get ~0 traffic (<a href="https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/" target="_blank" rel="noopener noreferrer">DataForSEO</a>)</td>
+</tr>
+<tr>
+<td>AI UGC beats human creators</td>
+<td><strong>Myth</strong></td>
+<td>Statics match; fully AI UGC loses on CPA and fatigue</td>
+</tr>
+<tr>
+<td>A long-running ad is a profitable ad</td>
+<td><strong>Half true</strong></td>
+<td>Runtime is a proxy; abandoned ads keep running</td>
+</tr>
+<tr>
+<td>Meta's free AI makes paid tools pointless</td>
+<td><strong>Contested</strong></td>
+<td>Assistants say Meta's tools are free; a $2k practitioner test called them "not ready" (<a href="https://www.reddit.com/r/FacebookAds/comments/1sx2kp3/spent_2k_testing_metas_ai_creative_features_so/" target="_blank" rel="noopener noreferrer">r/FacebookAds</a>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="e-ad-radar-data-and-a-free-tools-hub-are-the-best-content-bets-after-comparisons">(e) Ad Radar data and a free-tools hub are the best content bets after comparisons</h2>
+<p>Seventeen content categories were scored on eight weighted criteria: AI-citation potential (20%), traffic, conversion intent and defensibility (15% each), effort, time to impact and risk (10% each), and fit with the current site (5%). The scores rest on competitor folder-traffic estimates and live ChatGPT answers (<a href="https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/" target="_blank" rel="noopener noreferrer">DataForSEO</a>), and three patterns drive them. No AI-ads competitor gets meaningful traffic from programmatic ad-library pages; HeyGen's /tool/ folder carries a quarter of the traffic to its top 100 pages; and ChatGPT opens answers on ad hooks and benchmarks with first-party ad statistics from small ad-intelligence sites, one of which, ad-radar.dev, trades under the same "Ad Radar" name as Ad Studio's feature (<a href="https://chatgpt.com/?prompt=best%20hooks%20for%20facebook%20ads&amp;hints=search" target="_blank" rel="noopener noreferrer">ChatGPT</a>).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Category</th>
+<th>Score /5</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Data-backed winning-ad examples and hook libraries (by niche, season, hook; from Ad Radar)</td>
+<td>4.00</td>
+<td>Quotable statistics; leads straight into "clone this ad"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Original research and creative benchmarks (Ad Radar reports)</td>
+<td>3.75</td>
+<td>Most-cited format for benchmark questions; low volume; Ad Radar has run-time data, not spend</td>
+</tr>
+<tr>
+<td>2</td>
+<td>"Best X for Y" hubs</td>
+<td>3.75</td>
+<td>Proven route into AI tool answers; counted inside the comparison program</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Meta Ad Library and ad-research guides</td>
+<td>3.70</td>
+<td>Largest head terms ("meta ad library" 90,500 US/mo, mostly navigational); Foreplay's top non-brand page; sets up Ad Radar</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Specs and sizes hub with a checker</td>
+<td>3.60</td>
+<td>Cheap; ChatGPT cites spec pages that carry "checked [date]"</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Free AI tools</strong> (see below)</td>
+<td>3.55 as a whole; top tools higher</td>
+<td>HeyGen's biggest non-brand folder; generic text tools compete with ChatGPT itself</td>
+</tr>
+<tr>
+<td>7</td>
+<td>YouTube tutorials (off-site)</td>
+<td>3.50</td>
+<td>Most-cited domain in AI Overviews; no site changes</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Use-case and industry pages (~10 niches)</td>
+<td>3.35</td>
+<td>High intent; doorway risk if templated</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Directories and marketplaces (off-site)</td>
+<td>3.35</td>
+<td>One-off launch task</td>
+</tr>
+<tr>
+<td>10</td>
+<td>How-to guides (creative testing, Andromeda)</td>
+<td>3.30</td>
+<td>"meta andromeda" 1,300/mo; generic without data</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Platform policy guides (AI labels)</td>
+<td>3.10</td>
+<td>Tiny volume; accuracy risk</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Integration pages and Shopify listing</td>
+<td>2.95</td>
+<td>Only for real integrations</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Glossary</td>
+<td>2.90</td>
+<td>Limit to product-data terms</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Calculators as a series</td>
+<td>2.80</td>
+<td>Madgicx's cost calculator gets ~11 visits/mo; build one, not ten</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Templates gallery</td>
+<td>2.65</td>
+<td>Canva owns it</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Localized content</td>
+<td>2.40</td>
+<td>Defer; French pilot first</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Programmatic ad-library pages at scale</td>
+<td>2.35</td>
+<td>~0–15 visits per page for Atria, adlibrary.com and Motion; scaled-content and Meta-terms risk</td>
+</tr>
+</tbody>
+</table></div>
+<p>Four bets should sit alongside the comparison program. The first is an <strong>"Ad Radar Insights" program</strong>: a recurring research report that feeds 20–40 curated example and hook pages, each opening on one quotable statistic, published under an unambiguous name such as "Ad Studio Winning Ads Index" to avoid the ad-radar.dev collision. These pages should show aggregate statistics and link to Meta's library rather than re-host other brands' creatives, and /winning-ads detail views should stay noindexed until legal has reviewed how Ad Radar collects its data, because Meta's terms bar automated collection "without first obtaining Meta's express written permission" (<a href="https://www.facebook.com/apps/site_scraping_tos_terms.php" target="_blank" rel="noopener noreferrer">Meta</a>). The second is the <strong>free-tools hub</strong> described below. The third is a <strong>Meta Ad Library and ad-research guide set</strong>, which sits on the category's largest head terms and leads naturally into "what Ad Radar adds on top". The fourth is a <strong>YouTube channel</strong> in which every comparison test and tool gets a video twin. Beyond these, the strongest additional options are use-case pages for real niches; a definitional page on "AI creative agent vs AI media-buying agent", since ChatGPT reads "AI ads agent" as campaign tools such as Ryze, Shopify Campaign Autopilot and Madgicx and no vendor owns that SERP; a dated AI-label policy guide; and a Q1 2027 seasonal calendar built around Valentine's Day and Mother's Day. Black Friday 2026 is too close to rank for, though a quick data post could still be cited by AI assistants.</p>
+<h3 id="free-ai-tools-as-a-category-in-their-own-right">Free AI tools as a category in their own right</h3>
+<p>Scored as a whole, free tools land sixth, because generic text generators compete with ChatGPT, which now writes hooks inside its own answer. Scored tool by tool, the ad-specific tools at the top of the list beat most content types on conversion and on narrow AI prompts. When ChatGPT was asked for a "free hook generator for TikTok and Meta ads", every source it cited was a small, single-purpose tool page, and it repeated their stated limits ("12 hooks… no signup") (<a href="https://cloro.dev/docs/api-reference/endpoint/monitor-chatgpt" target="_blank" rel="noopener noreferrer">cloro</a>). Demand for ad-specific tools is small but backed by buyers, with high CPCs, low-to-medium difficulty and small domains in the top 3 (<a href="https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/" target="_blank" rel="noopener noreferrer">DataForSEO</a>):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>US searches/mo</th>
+<th>Keyword difficulty</th>
+<th>CPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break-even roas calculator</td>
+<td>590</td>
+<td>6</td>
+<td>$13.08</td>
+</tr>
+<tr>
+<td>facebook ad mockup</td>
+<td>390</td>
+<td>22</td>
+<td>$2.55</td>
+</tr>
+<tr>
+<td>meta ad sizes</td>
+<td>590</td>
+<td>24</td>
+<td>$7.71</td>
+</tr>
+<tr>
+<td>free ai ad generator</td>
+<td>390</td>
+<td>40</td>
+<td>$33.91</td>
+</tr>
+<tr>
+<td>hook generator</td>
+<td>590</td>
+<td>49</td>
+<td>$8.22</td>
+</tr>
+<tr>
+<td>ad grader</td>
+<td>20</td>
+<td>29</td>
+<td>$74</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every one of the 16 tool SERPs checked showed an AI Overview. Mature programs get little traffic from ad tools (Copy.ai's hook generator draws ~422 US visits a month and Buffer's 16), so the case rests on conversion and AI citation rather than raw volume. Creatify is the template to beat: free text tools with no signup, then a free account, then its ad agent opening with the brand and blueprint pre-filled (<a href="https://creatify.ai/features/ai-ad-spy" target="_blank" rel="noopener noreferrer">Creatify AI Ad Spy</a>). Ad Studio already has a head start it is not using: magicfit.pushowl.com has four indexed free tools with no equivalent on ads.brevo.com (a TikTok ads ROAS calculator, a net profit margin calculator, a win-back email generator and a UGC video script generator), which should be redirected into the new hub, with the email tool moving to brevo.com.</p>
+<p>Cost to serve decides how each tool is gated:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Tools</th>
+<th>Cost to serve</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Calculators, mockups, resizers (client-side)</td>
+<td>~$0</td>
+<td>Open</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Text tools on a cheap LLM</td>
+<td>~$0.0005–0.006 per run</td>
+<td>Open, with Cloudflare Turnstile (free) and 10–20 runs per IP per day (<a href="https://developers.cloudflare.com/turnstile/plans/" target="_blank" rel="noopener noreferrer">Cloudflare</a>)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Image generation</td>
+<td>~$0.01–0.17 per image</td>
+<td>One or two low-resolution previews, then email or account</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Video</td>
+<td>8 seconds costs $1.20 on Veo 3.1 Fast with audio (<a href="https://replicate.com/google/veo-3.1-fast" target="_blank" rel="noopener noreferrer">Replicate</a>) and ~$1.85 at 720p on Seedance 2.5 (<a href="https://openrouter.ai/bytedance/seedance-2.5" target="_blank" rel="noopener noreferrer">OpenRouter</a>)</td>
+<td>No anonymous generation</td>
+</tr>
+</tbody>
+</table></div>
+<p>A thousand anonymous video runs a day would cost $1,200–1,850, which is why video stays behind signup, and public voice cloning stays off the table entirely. On policy, 25–40 distinct tools, each with unique explanation and examples, is defensible, whereas hundreds of keyword-swapped variants are what Google's scaled-content and misleading-functionality policies describe (<a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener noreferrer">Google</a>). Conversion data is thin: the only published figures are a builder's self-reported 4.2–5.1% from tool use to product use (<a href="https://www.webzum.com/blog/free-ai-tools-lead-generation" target="_blank" rel="noopener noreferrer">Webzum</a>), so planning should assume 2–5% for high-fit tools and under 1% for loosely related ones, then measure within 60 days.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>First-batch tool</th>
+<th>Target keywords (US/mo, difficulty)</th>
+<th>Cost tier</th>
+<th>Handoff into Ad Studio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Winning Ads Finder (lite Ad Radar by niche)</td>
+<td>winning ads 260/13; facebook ad examples 880/42</td>
+<td>Own data</td>
+<td>"Clone this ad for my product"; weekly-winners email into Brevo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Competitor Ad Breakdown (brand → longest-running ads, angles, offers)</td>
+<td>facebook ad spy tool 40/22; "[brand] ads"</td>
+<td>Own data plus LLM</td>
+<td>Direct counter to Creatify's AI Ad Spy</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ad Hook Generator plus Grader (against hooks from long-running ads)</td>
+<td>hook generator 590/49</td>
+<td>LLM</td>
+<td>"Turn this hook into an ad"</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UGC Ad Script Generator (migrated from magicfit)</td>
+<td>ai script generator 2,900/69; ad script generator 40/19</td>
+<td>LLM</td>
+<td>Upsell to UGC video</td>
+</tr>
+<tr>
+<td>5</td>
+<td>AI Ad Copy Generator (Meta, TikTok, Google presets on one page)</td>
+<td>ad copy generator 110/28; google ad generator 170/37</td>
+<td>LLM</td>
+<td>Copy carried into the ad</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Free AI Ad Generator (product URL → one static ad; flagship)</td>
+<td>ai ad generator 1,900/66; ad maker 1,000/40; free ai ad generator 390/40</td>
+<td>Image</td>
+<td>Watermarked without signup, full resolution after, then the free tier</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Break-even ROAS Calculator (merging the magicfit ROAS tool)</td>
+<td>roas calculator 1,000/14; break even roas calculator 590/6</td>
+<td>Client-side</td>
+<td>"Make ads that clear this ROAS"</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ad Mockup / Feed Preview</td>
+<td>facebook ad mockup 390/22; instagram ad mockup 210/12</td>
+<td>Client-side</td>
+<td>"See your generated ad in the feed"</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Meta Ad Size Guide plus Resizer, dated "last checked"</td>
+<td>meta ad sizes 590/24; facebook ad size 1,900</td>
+<td>Client-side</td>
+<td>"Generate this size"</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Ad Creative Grader ("Roast My Ad")</td>
+<td>ad grader 20/29, CPC $74</td>
+<td>Vision LLM</td>
+<td>Shareable score free; detailed fixes behind email; "regenerate an improved version"</td>
+</tr>
+</tbody>
+</table></div>
+<p>The hub should nest tools by job so that each category page can rank and each tool page links sideways to its neighbours:</p>
+<pre><code>/tools/                          hub: categories, featured tools, Ad Radar proof (real figure), email capture
+/tools/ai-ad-generator/          flagship, top level
+/tools/ad-research/              winning-ads/, competitor-ads/, ad-grader/, (tiktok-ads/ only if Ad Radar adds TikTok)
+/tools/ad-copy/                  hook-generator/, ugc-script-generator/, ad-copy-generator/, ad-angle-generator/
+/tools/image/                    ad-mockup/, ad-size-guide/, brand-kit/, product-photography/, background-generator/
+/tools/video/                    ugc-video-generator/ (gated), ai-actors/ (gallery), caption-generator/
+/tools/calculators/              break-even-roas/, ad-metrics/ (CPM, CPA, CTR), creative-testing-budget/
+</code></pre>
+<p>Every tool page should share one template: a working tool directly under the H1; the free tier stated in plain text ("no signup · 15 hooks · 10 runs a day"), because assistants quote exactly these lines; output cards that each carry a "Turn this into an ad in Ad Studio" button opening the product pre-filled; a how-it-works section with real Ad Radar examples; a 6–10 question FAQ and related tools; all explanatory text rendered on the server; and Brevo email capture at the "email me the full pack" or "weekly winners" step, tagged by tool so nurture matches the job. Batch two, in months two and three, adds gated AI UGC video, an AI actors gallery, AI product photography, a brand-kit extractor, an ad-angle generator, ad-metrics calculators and a creative-testing budget calculator. Business-name generators (difficulty 95 and owned by Shopify), email-subject-line and LTV/CAC tools (which belong on brevo.com), and generic image, text-to-speech and logo tools (difficulty 90+ with weak fit) should stay off ads.brevo.com.</p>
+<h2 id="f-the-foundation-must-be-fixed-before-any-comparison-page-can-rank">(f) The foundation must be fixed before any comparison page can rank</h2>
+<h3 id="indexing-canonicals-and-the-magicfit-split">Indexing, canonicals and the MagicFit split</h3>
+<p>Ads.brevo.com is server-rendered, welcomes AI crawlers in robots.txt and already publishes an llms.txt (<a href="https://ads.brevo.com/robots.txt" target="_blank" rel="noopener noreferrer">robots.txt</a>), yet its search footprint is almost nil. Google returns only one URL (/winning-ads) for <code>site:ads.brevo.com</code>, the site is absent from page one for "brevo ad studio", and its estimated organic traffic is zero (<a href="https://api-docs.serpstat.com/" target="_blank" rel="noopener noreferrer">Serpstat</a>). Meanwhile magicfit.pushowl.com still serves identical content, is live and self-canonical, and ranks for "magicfit" (<a href="https://magicfit.pushowl.com/sitemap.xml" target="_blank" rel="noopener noreferrer">magicfit sitemap</a>). The two sites compete with each other, and the new one is losing.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Fix</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>301-redirect magicfit.pushowl.com/* to ads.brevo.com path by path (/agents/ads-maker → /ads-maker, /agents/video-ads → /ugc-ads, tools → /tools/…); decide the public role of ads.pushowl.com; use Search Console's change-of-address tool if eligible</td>
+<td>Identical live content; AI engines cited magicfit.pushowl.com six times in the sample</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Make canonical, og:url and JSON-LD URLs self-referencing on /pricing, /caas, /affiliates, /login and /signup; strip <code>?x_referral_page=ai_pushowl_com</code> from internal links; replace the personal Calendly with a team link</td>
+<td>All five pages canonicalize to magicfit (<a href="https://ads.brevo.com/pricing" target="_blank" rel="noopener noreferrer">pricing</a>)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Verify in Google Search Console and Bing Webmaster Tools; rebuild the sitemap with lastmod and add /caas, /affiliates, /tools and /compare; enable IndexNow</td>
+<td>The sitemap has 6 URLs, no lastmod, and omits /caas (<a href="https://ads.brevo.com/sitemap.xml" target="_blank" rel="noopener noreferrer">sitemap</a>)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Noindex or 301 legacy /agents/<em> pages; noindex app routes (/templates/</em>, /text-to-image/<em>, /tiktok-hooks/</em>) on both hosts</td>
+<td>They return 200 with no canonical; five app routes are indexed on magicfit</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Open crawlable content paths (unblock /blog or create /learn, plus /compare, /alternatives, /tools); confirm Claude-User, Perplexity-User and Bingbot are allowed and Cloudflare's bot rules don't block AI search bots</td>
+<td>/blog and /library are disallowed; /compare returns 404</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rewrite the pricing page and <strong>publish one free-plan statement everywhere</strong>; explain what Studio Max includes</td>
+<td>Title is "Pricing - Ad Studio AI Content Studio"; 1,508 characters, no navigation. The plan header says "3 Free generations, one-time", the body "You get 2 free generations", the homepage "Start with 3 free ads", and "50 credits" survives in a MagicFit-era meta description (<a href="https://ads.brevo.com/" target="_blank" rel="noopener noreferrer">Ad Studio</a>)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Source or remove "★★★★★ 4.9/5"; change "Trusted by 40,000+ brands" to "Built by the team behind Brevo PushOwl, used by 40,000+ D2C brands"; substantiate "80,000+ ads designed"</td>
+<td>Shopify 3.4/5 from 3; AppSumo 4.63/5 from 106; PushOwl 4.8/5 from 2,312. None is 4.9</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Add homepage JSON-LD: Organization (Brevo as parentOrganization, sameAs links) and SoftwareApplication with $0/$19/$49/$199 Offers</td>
+<td>The homepage has no JSON-LD</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Link to Ad Studio from brevo.com navigation, product, ecommerce and Shopify pages, the help center, pushowl.com and the PushOwl Shopify listing</td>
+<td>brevo.com's homepage and /products don't mention Ad Studio (<a href="https://www.brevo.com/" target="_blank" rel="noopener noreferrer">brevo.com</a>)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Move marketing pages from <code>private, no-store</code> to <code>public, s-maxage</code> caching</td>
+<td>Every homepage request currently hits the origin server</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="entity-naming-and-the-claims-ai-engines-repeat">Entity, naming and the claims AI engines repeat</h3>
+<p>The product currently has three names on three domains: MagicFit at magicfit.pushowl.com, "Ad Studio by Brevo PushOwl" at ads.pushowl.com, and Ad Studio by Brevo at ads.brevo.com. In April 2026 the team told AppSumo buyers "The domain isn't changing" (<a href="https://appsumo.com/products/magicfit/questions/general-question-about-positioning-and-b-1494273/" target="_blank" rel="noopener noreferrer">AppSumo Q&amp;A</a>), and no AI engine links MagicFit to Ad Studio. Google's engines define the brand from third-party pages: for "What is Brevo Ad Studio?", AI Mode, AI Overviews and Gemini cited a directory listing "Added 6 days ago" with zero reviews (<a href="https://agentlocker.ai/agent/ad-studio-by-brevo" target="_blank" rel="noopener noreferrer">AgentLocker</a>), plus SourceForge and an unrelated Brevo WooCommerce help article, and none of them cited ads.brevo.com. The resulting answers carry four errors. Assistants present the in-Brevo eligibility rule (accounts "created after October 13, 2026" with an ecommerce integration) as a general requirement, when it governs only access from inside the Brevo app (<a href="https://help.brevo.com/hc/en-us/articles/39772555732498-Create-static-and-video-ads-in-Ad-Studio" target="_blank" rel="noopener noreferrer">Brevo help</a>). They claim direct export to Meta and TikTok, while the help center says users download their ads. They repeat "50+ languages" and "ads running 90+ days", both traced to the directory listing rather than the site. And Google AI Mode judged Ad Studio using Brevo's email-product Trustpilot reviews (<a href="https://www.trustpilot.com/review/www.brevo.com" target="_blank" rel="noopener noreferrer">Trustpilot</a>). Name collisions compound the problem: Higgsfield, Captions, Creatopy, Postly and Hightouch all have something called "Ad Studio", and ad-radar.dev trades as "Ad Radar".</p>
+<p>The fix is consistency at every point of contact. The product should use one name everywhere, "Ad Studio by Brevo (formerly MagicFit by PushOwl)", in titles, schema and listings, backed by a /facts page that states pricing, credits, languages, the publishing method, Ad Radar's coverage and a plain answer to "Do I need a Brevo account?", which the team must first confirm. The rename page should go live alongside it. The team should claim and correct the AgentLocker, SourceForge, Leanvibe and mcpservers.org listings; rename the Shopify listing, which still reads "Magicfit" at 3.4/5 from 3 reviews; and update the Instagram @magicfitai bio and the AppSumo listing. Separate review profiles for "Ad Studio by Brevo" on G2, Capterra and Trustpilot, seeded with genuine reviews from the PushOwl base, will stop engines importing Brevo email reviews. AppSumo lifetime buyers should get a clear note before the redirects go live.</p>
+<h3 id="off-site-geo-lists-youtube-disclosed-reddit-and-assistant-integrations">Off-site GEO: lists, YouTube, disclosed Reddit and assistant integrations</h3>
+<p>For an established brand, 94% of new AI mentions come from third-party content (<a href="https://ahrefs.com/blog/self-promotional-content-ai-seo-experiment/" target="_blank" rel="noopener noreferrer">Ahrefs</a>), so off-site work becomes the larger lever as Ad Studio matures. The first workstream is list inclusion, because the pool of lists AI engines reuse is fragmented and winnable by volume. For ChatGPT, the recurring lists were <a href="https://www.hackceleration.com/labs/best/ad-creative-tools" target="_blank" rel="noopener noreferrer">hackceleration</a>, <a href="https://rankite.com/blog/best-ai-ad-generator" target="_blank" rel="noopener noreferrer">rankite</a>, <a href="https://www.media.io/comparison/best-ai-ad-generators.html" target="_blank" rel="noopener noreferrer">media.io</a>, <a href="https://www.avocadoai.co/blog/roundup/best-ai-ad-generators-ecommerce-2026" target="_blank" rel="noopener noreferrer">avocadoai</a>, omniconvert, segwise, magier, ugcadtools and toolradar; for Gemini, Claude and Copilot they were <a href="https://www.wireflow.ai/blog/best-ai-generated-ads-tools-in-2026" target="_blank" rel="noopener noreferrer">wireflow</a>, <a href="https://www.cometly.com/post/ai-ecommerce-ad-generator" target="_blank" rel="noopener noreferrer">cometly</a>, <a href="https://heyoz.com/blogs/best-ai-ad-tools-for-ecommerce-brands" target="_blank" rel="noopener noreferrer">heyoz</a>, <a href="https://www.superside.com/blog/ai-ad-creative-generators" target="_blank" rel="noopener noreferrer">superside</a> and trendtrack. Many owners are small SaaS companies, so the pitch should be real test data and co-marketing, with any paid placement disclosed.</p>
+<p>The second workstream is YouTube: brief or sponsor the reviewers already cited in AI Overviews (Vil Vas – Software Reviews, SaaS Report, Pableke Review, TOP Digital Products, Blog With Ben, TryThisAI) with FTC-compliant disclosure, and build an owned channel the way Creatify did, since Creatify's own videos were cited three times in AI Overviews in the sample and the team's existing video-ad skills make production cheap. The third is Reddit, through disclosed team accounts in r/FacebookAds, r/AskMarketing, r/DigitalMarketing, r/advertising, r/shopify, r/PPC and r/ecommerce that answer the billing and credit questions buyers actually ask, and never through undisclosed posts. The fourth is being callable inside assistants, now the category's frontier: Foreplay and Higgsfield ship MCP servers, Arcads a ChatGPT plugin, and MagicFit's own AppSumo buyers asked for MCP (<a href="https://appsumo.com/products/magicfit/reviews/" target="_blank" rel="noopener noreferrer">AppSumo reviews</a>). Claude already cited an mcpservers.org listing for ads.brevo.com, so the team should confirm what that listing is and document it properly. The fifth is the Shopify App Store, which AI Mode cited (through Enhencer's listing) for "best AI tool to make Facebook ads for a Shopify store", making an optimized "Ad Studio by Brevo" listing a citation surface in its own right.</p>
+<h3 id="measurement">Measurement</h3>
+<p>A baseline already exists: on 6 November, 25 prompts across seven engines put Ad Studio's share of voice at zero. That panel should be re-run monthly with three runs per key prompt per engine, reported as percentages of runs with stated denominators rather than single-run ranks (ChatGPT's #1 pick flipped between Creatify and AdCreative.ai across identical runs), and expanded to about 100 prompts covering alternatives, head-to-heads and tool queries.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Tool</th>
+<th>What to track</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indexing and rank</td>
+<td>Google Search Console (with its Generative AI report), Bing Webmaster Tools</td>
+<td>Indexed URLs; rank for "brevo ad studio", "ad studio by brevo", "magicfit"; comparison-page impressions and CTR</td>
+<td>Weekly</td>
+</tr>
+<tr>
+<td>AI answers</td>
+<td>elmo or limelit (self-hosted), or Peec / Otterly</td>
+<td>% of runs mentioning Ad Studio; ads.brevo.com URLs cited; recommendation position; third-party URLs cited (the outreach list)</td>
+<td>Monthly, 3 runs</td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td>Bing AI Performance report (<a href="https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/" target="_blank" rel="noopener noreferrer">Bing</a>)</td>
+<td>Citations, grounding queries</td>
+<td>Weekly</td>
+</tr>
+<tr>
+<td>Retrieval</td>
+<td>CDN or server logs, or GEOInflow</td>
+<td>OAI-SearchBot, ChatGPT-User, Claude-User, PerplexityBot fetches of /compare and /tools</td>
+<td>Weekly</td>
+</tr>
+<tr>
+<td>Traffic and revenue</td>
+<td>GA4 custom "AI assistants" channel ordered above Referral (<a href="https://www.lovesdata.com/blog/how-to-track-ai-traffic-ga4/" target="_blank" rel="noopener noreferrer">Loves Data</a>); an AI option in "How did you hear about us?"</td>
+<td>Sessions → signup → first ad generated → $19/$49 paid, by entry page</td>
+<td>Weekly</td>
+</tr>
+<tr>
+<td>Tools funnel</td>
+<td>Product events</td>
+<td>Runs → results → handoff clicks → signups → activation</td>
+<td>Weekly</td>
+</tr>
+<tr>
+<td>Fact freshness</td>
+<td>Data-file scouts</td>
+<td>Fields past their refresh window; detected rival changes</td>
+<td>Weekly</td>
+</tr>
+</tbody>
+</table></div>
+<p>The proposed 90-day signals are deliberately modest: every marketing URL indexed on ads.brevo.com and none on magicfit; ads.brevo.com ranking #1 for its own brand queries; Google's engines citing ads.brevo.com or /facts for brand prompts with the eligibility error gone; a non-zero mention rate on alternatives and head-to-head prompts; and a measured signup rate per comparison page and per tool.</p>
+<h2 id="g-a-90-day-plan-with-twelve-decisions-to-make-first">(g) A 90-day plan with twelve decisions to make first</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Workstream</th>
+<th>Days 0–30: fix the foundation</th>
+<th>Days 31–60: ship Tier 1 and the first tools</th>
+<th>Days 61–90: expand, measure, refresh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundation and identity</td>
+<td>Redirects, canonicals, Search Console and Bing, sitemap, robots, app-route noindex; pricing rewrite and one free-plan statement; claims fixed; homepage schema; brevo.com links; /facts and rename pages; Shopify listing renamed</td>
+<td>Rewrite feature pages answer-first; CDN caching; hreflang plan</td>
+<td>Audit indexing; prune or merge thin URLs</td>
+</tr>
+<tr>
+<td>Data file and evidence</td>
+<td>Data file v1 for Tier 1 and Tier 2 rivals plus Ad Studio itself; weekly snapshots; legal review of comparative claims and Ad Radar sourcing; same-product output tests for the four Tier-1 rivals</td>
+<td>Tier 2 tests; first measured cost per output</td>
+<td>First full refresh cycle; corrections inbox live</td>
+</tr>
+<tr>
+<td>Comparison pages</td>
+<td>/compare hub; <strong>Ad Studio vs Arcads</strong> and <strong>vs Zeely</strong> live once canonicals are fixed</td>
+<td>vs AdCreative.ai and vs Creatify; four alternatives pages; Arcads vs Creatify (neutral); both "best" hubs; "Do I need a paid tool if Meta's AI is free?"</td>
+<td>Six to eight Tier 2 pages chosen by Search Console signals (Canva Grow, Higgsfield, Predis, Foreplay/Atria vs Ad Radar, Meta Ad Library vs Ad Radar, DIY-LLM approach page); "Ad Studio alternatives" page</td>
+</tr>
+<tr>
+<td>Tools and other content</td>
+<td>Redirect the four magicfit tools; hub shell</td>
+<td>Tools 1–5 (break-even ROAS, ad mockup, size guide plus resizer, hook generator plus grader, UGC script); Meta Ad Library guide; Insights report #1 if legal clears</td>
+<td>Tools 6–10 (flagship generator, Competitor Breakdown, Winning Ads Finder, ad copy, Roast My Ad); "AI creative agent vs media-buying agent"; Q1 2027 seasonal plan</td>
+</tr>
+<tr>
+<td>Off-site</td>
+<td>Claim AgentLocker and SourceForge; create G2, Capterra and Trustpilot profiles; disclosed Reddit accounts; shortlist lists and YouTubers</td>
+<td>Outreach to 10–15 list owners; four to six owned videos; two or three disclosed sponsored reviews</td>
+<td>Reviews from the PushOwl base; MCP or ChatGPT app decision</td>
+</tr>
+<tr>
+<td>Measurement</td>
+<td>GA4 AI channel; prompt-tracker re-baseline (3 runs); log monitoring; Bing AI Performance</td>
+<td>First Search Console read on comparison pages; panel re-run</td>
+<td>90-day review against the section (f) signals; scale-or-prune decision; French pilot decision</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two gates hold the sequence together. No comparison page launches while its canonical still points at magicfit or while its cost table depends on an unsettled free-plan number, and no Ad Radar page is indexed before legal signs off on data sourcing. The decisions below unblock the plan, and the first three are needed within a week.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Recommended call</th>
+<th>Needed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The canonical free offer: 2 generations, 3 generations or a credit amount</td>
+<td>Pick one; publish it on the site, help center, directories and llms.txt</td>
+<td>Day 7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Retire magicfit.pushowl.com and define ads.pushowl.com's public role</td>
+<td>301 everything public to ads.brevo.com; tell AppSumo buyers first</td>
+<td>Day 7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"4.9/5" and "40,000+ brands"</td>
+<td>Remove 4.9 unless a source exists; reword 40,000+ as PushOwl's base</td>
+<td>Day 7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Naming</td>
+<td>Always "Ad Studio by Brevo"; give the Ad Radar data a name that cannot collide with ad-radar.dev</td>
+<td>Day 14</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The answer to "Do I need a Brevo account?"</td>
+<td>Confirm and publish; describe in-Brevo eligibility separately</td>
+<td>Day 14</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Tone policy</td>
+<td>Honest, sourced, at least one rival win per page; harsher paid variants on noindexed URLs</td>
+<td>Day 14</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Switcher offer</td>
+<td>Bonus credits for anyone showing a rival invoice, plus brand-kit import; consider a CaaS credit and an agency bounty</td>
+<td>Day 30</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Legal sign-off</td>
+<td>Comparative-claims template (EU rules); Ad Radar data sourcing and what can be indexed</td>
+<td>Day 30</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Studio Max per-credit price</td>
+<td>Explain what Max adds, or reprice, before cost tables ship</td>
+<td>Day 30</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Owners and budget</td>
+<td>A named owner and refresh deadlines for the data file; YouTube and list budgets; self-hosted vs paid tracker</td>
+<td>Day 30</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Free-tool gating</td>
+<td>Tiers 0–1 open with rate limits; image previews capped; video gated; daily spend alarms</td>
+<td>Day 30</td>
+</tr>
+<tr>
+<td>12</td>
+<td>MCP server or ChatGPT app</td>
+<td>Build if the team can support it; it matches category norms and creates launch news</td>
+<td>Day 60</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The binding constraint is not page craft but identity. Ad Studio is a new entity to search engines and AI assistants, and for new entities owned pages drive most early AI mentions, but only if those pages are the ones that get crawled, indexed and treated as canonical. Today that status belongs to magicfit.pushowl.com and to a directory listing created six days before this research, so every comparison page published before the fix sends authority to the wrong domain and invites AI engines to keep quoting the wrong eligibility rule and the wrong free plan.</p>
+<p>The strategic edge lies in honesty exactly where the category is weakest. Billing is buyers' loudest complaint, competitors' proof is often unsourced, and nobody shows outputs side by side; Ad Studio's own unsourced 4.9/5 is the same weakness, and removing it is the precondition for credibly exploiting it in others. Because AI answers copy whatever numbers a page publishes, as Creatify's unhedged Arcads prices show, a dated, refreshed data file that computes outcome units ("what $19 makes", "cost per 30-second ad") can make ads.brevo.com the reference that other pages and assistants cite, the way Wise's live quote table became the reference for transfer costs.</p>
+  </main>
+</div>
+<footer>
+  <div class="footer-inner">
+    Sources are linked inline. Traffic and search-volume figures are third-party estimates, and AI-answer results are one-day samples from 6 Nov 2026; check competitor prices and ratings by hand before publishing anything based on them.
+    <a href="report.md">Download the Markdown version</a>.
+  </div>
+</footer>
+<a href="#" class="back-top" id="backTop">↑ Top</a>
+<script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+  var heads = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+  var back = document.getElementById('backTop');
+  function onScroll() {
+    var y = window.scrollY + 120, idx = -1;
+    heads.forEach(function (h, i) { if (h && h.offsetTop <= y) idx = i; });
+    links.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+    back.classList.toggle('show', window.scrollY > 800);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
