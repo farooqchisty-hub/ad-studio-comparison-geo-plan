@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Brevo Ads example pages</title>
+<meta name="description" content="Five example content pages for ads.brevo.com: a comparison page, an Ad Radar insights page, a free tool, a guide and a YouTube companion page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=TikTok+Sans:opsz,wdth,wght@12..36,75..150,300..900&display=swap" rel="stylesheet">
+<style>
+:root { --canvas:#f1f1f1; --surface:#fff; --ink:#303030; --muted:#616161; --line:#e3e3e3; --green:#008060; --green-dark:#004c3f; --tint:#e3f1ec; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--canvas); color:var(--ink); font:400 16px/1.6 Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:1100px; margin:0 auto; padding:48px max(16px, env(safe-area-inset-left)) 72px; }
+.eyebrow { display:inline-flex; align-items:center; gap:8px; padding:6px 14px 6px 10px; border-radius:999px; background:var(--surface); border:1px solid rgba(48,48,48,.08); font-size:14px; }
+.eyebrow::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--green); }
+h1 { font:700 clamp(32px,5vw,52px)/1.08 "TikTok Sans", system-ui, sans-serif; font-stretch:150%; letter-spacing:-.025em; margin:18px 0 12px; text-wrap:balance;
+  background:linear-gradient(180deg,var(--ink),var(--green-dark)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+h1 em { font-family:"Instrument Serif", Georgia, serif; font-style:italic; font-weight:400; font-stretch:normal; color:var(--green-dark); -webkit-text-fill-color:var(--green-dark); }
+.lead { color:var(--muted); max-width:62ch; margin:0 0 32px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+.card { display:flex; flex-direction:column; gap:10px; background:var(--surface); border-radius:24px; padding:24px; text-decoration:none; color:inherit; border:1px solid transparent; transition:border-color .2s; }
+.card:hover { border-color:var(--green); }
+.card:focus-visible { outline:2px solid var(--green); outline-offset:2px; }
+.kind { font:600 12px/1 Inter, sans-serif; color:var(--green-dark); background:var(--tint); padding:6px 10px; border-radius:999px; align-self:flex-start; }
+.card h2 { font:italic 400 28px/1.1 "Instrument Serif", Georgia, serif; margin:4px 0 0; }
+.card p { margin:0; color:var(--muted); font-size:15px; }
+.kw { margin-top:auto; padding-top:10px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
+.kw strong { color:var(--ink); font-weight:600; }
+.go { font:600 14px/1 "TikTok Sans", sans-serif; color:var(--green-dark); }
+.foot { margin-top:40px; font-size:14px; color:var(--muted); }
+.foot a { color:var(--green-dark); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="eyebrow">Prototype · not live on ads.brevo.com</span>
+  <h1>Brevo Ads <em>example pages</em></h1>
+  <p class="lead">Five working examples of the content plan for ads.brevo.com: one comparison page and one page for each of the four content bets. Facts checked 6 Nov 2026. Placeholders marked [Pending] still need the team.</p>
+  <div class="grid">
+    <a class="card" href="brevo-ads-vs-arcads/">
+      <span class="kind">Comparison</span>
+      <h2>Arcads pricing vs Brevo Ads</h2>
+      <p>Scorecard, cost-per-ad charts and annotated screenshots of each tool's pricing, trial and terms.</p>
+      <span class="kw"><strong>arcads pricing</strong> · 590 US / 2,900 global searches a month</span>
+      <span class="go">Open page →</span>
+    </a>
+    <a class="card" href="skincare-meta-ads-90-days/">
+      <span class="kind">Ad Radar insights</span>
+      <h2>Skincare ads that run 90+ days</h2>
+      <p>Charts from 247 live skincare Meta ads: format, hooks, offers and copy length against run time.</p>
+      <span class="kw"><strong>skincare ads</strong> · 1,000 US / 2,400 global</span>
+      <span class="go">Open page →</span>
+    </a>
+    <a class="card" href="safe-zone-checker/">
+      <span class="kind">Free tool</span>
+      <h2>Instagram safe zone checker</h2>
+      <p>Drop in an ad, see it in Feed, Stories and Reels with Meta's safe zones, get fixes and 3 crops.</p>
+      <span class="kw"><strong>safe zone cluster</strong> · about 14,600 US / 78,500 global</span>
+      <span class="go">Open tool →</span>
+    </a>
+    <a class="card" href="meta-ad-library/">
+      <span class="kind">Guide</span>
+      <h2>How to use the Meta Ad Library</h2>
+      <p>11 annotated screenshots, a shows-vs-hides matrix by region and how to spot a winning ad.</p>
+      <span class="kw"><strong>meta ad library</strong> · 90,500 US, rising</span>
+      <span class="go">Open page →</span>
+    </a>
+    <a class="card" href="clone-a-winning-meta-ad/">
+      <span class="kind">YouTube page</span>
+      <h2>Clone winning ads without copying them</h2>
+      <p>Video page with chapters, a 5-frame method, ad anatomy and a traffic-light guide to what you can copy.</p>
+      <span class="kw"><strong>winning ads</strong> · 260 US / 1,000 global</span>
+      <span class="go">Open page →</span>
+    </a>
+  </div>
+  <p class="foot">Research behind these pages: <a href="../">Comparison pages and GEO research report</a>. Brand: built on the Brevo Ads design system extracted from ads.brevo.com.</p>
+</div>
+</body>
+</html>
